@@ -281,7 +281,10 @@ $$\{x\mid x\geq0\}$$
 
   如果$A$不是$B$的子集，记作$A\nsubseteq B$或$B\nsupseteq A$，读作“$A$不包含于$B$”或“$B$不包含$A$”。
 \end{definition}
-我个人习惯用第一种表示方法。
+不同的人符号习惯可能不同，多见几种表示方法也不是不可以（前提是不弄乱）如同鲁迅的《孔乙己》当中：
+\begin{quotation}
+  “对呀对呀！……回字有四样写法，你知道么？”——《孔乙己》
+\end{quotation}
 
 根据定义便可以得到：$\mathbb{N}\subseteq\mathbb{Z}\subseteq\mathbb{Q}\subseteq\mathbb{R}$.
 
@@ -429,6 +432,11 @@ $$\{x\mid x\geq0\}$$
   同一律：$A\cap U=A;A\cup U=U$（这里$U$为全集）.
 \end{property}
 
+\begin{exercise}\label{exer:10}
+  用Venn图表示这两个定律。
+\end{exercise}
+
+
 这两个定律还是比较好理解的。所以我们直接快进到两个例子。
 
 \begin{example}
@@ -500,22 +508,16 @@ $$\{x\mid x\geq0\}$$
   结合律的集合运算符号是相同的，分配律的集合运算符号是不同的，请注意区别。
 
 \begin{property}
-  幂等律：$A\cup A=A,A\cap A=A$;
-\end{property}
-
-  我们在这里不介绍\enspace\underline{幂等}的概念，因为它涉及到抽象代数的知识。
-
-\begin{property}
   吸收律：$A\cup(A\cap B)=A,A\cap(A\cup B)=A.$
 \end{property}
 
-还有几个集合恒等式的证明留作习题。
-
-\begin{remark}
-  你可以试着用Venn图表示这些定律。
-\end{remark}
+\begin{exercise}
+  用Venn图表示这些定律。
+\end{exercise}
 
 \hspace*{\fill}
+
+我们在这里证明其中三个。
 
 \begin{example}
   证明上面集合运算的结合律。
@@ -535,7 +537,7 @@ $$\{x\mid x\geq0\}$$
   证明上面集合运算的分配律。
 \end{example}
 
-  和例\ref{exap:2}类似，我们用定义来证。但是这里只证明前一个，另外一个留作习题。
+  和例\ref{exap:2}类似，我们用定义来证。但是这里只证明前一个，另外一个留作练习。
 
 \begin{proof}
   首先证明$A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
@@ -585,5 +587,40 @@ $$\{x\mid x\geq0\}$$
   （第二步逆用了分配律，最后一步用到了零律。）
 \end{proof}
 
+\subsection{习题}
 
+\begin{exercise}\label{exer:11}
+  集合$\{0\}$与$\varnothing$是否相等？它们满足什么关系？
+\end{exercise}
+\begin{exercise}\label{exer:12}
+  证明：$\text{如果}A\subseteq B,B\subseteq S,\text{那么}A\subseteq S$.
+\end{exercise}
+\begin{exercise}\label{exer:13}
+  $\text{已知集合}A=\{1\text{,3,}m\}\text{,}B=\{m^2\text{,1}\}\text{,且}A\cup B=A\text{,求}m\text{的值}.$
+\end{exercise}
+\begin{exercise}
+  $\text{设}U=\{x\mid x{\in}N,\text{且}x{\leqslant}10\},A=\{1,2,4,5,9\},B{=}\{4,6,7,8,10\},C=\{3,5,7\},\text{求}A\cap B,A\cup B,\bar{A}\cap\bar{B},\bar{A}\cup\bar{B},(A\cap B)\cap C,(A\cup B)\cup C.$
+\end{exercise}
+\begin{exercise}\label{exer:14}
+  $\text{已知}A=[-1,2],B=\left(-\infty,-\frac{p}{4}\right),\text{且}B\subsetneqq{\complement}_{\mathbb{R}}A\text{,求实数}p\text{的取值范围}.$
+\end{exercise}
+\begin{exercise}
+  我们记集合$A$的元素个数为$\mid A\mid$.
+
+  (1)用Venn图说明：$|A\cup B|=|A|+|B|-|A\cap B|$.
+
+  (2)用Venn图说明：$|A\cup B\cup C|=|A|+|B|+|C|-|A\cap B|-|B\cap C|-|C\cap A|+|A\cap B\cap C|$.
+
+  这其实是集合的容斥原理。
+\end{exercise}
+\begin{exercise}
+  $\text{设}x,y,z\text{都是非零实数,试用列举法将}\frac x{|x|}+\frac y{|y|}+{\frac{z}{\mid z\mid}}+{\frac{xy}{\mid xy\mid}}+{\frac{xyz}{\mid xyz\mid}}\text{的所有可能值构成的集合表示出来}.$
+\end{exercise}
+\begin{exercise}
+  设 A 是两个整数平方和的集合，即$A=\{x\mid x=m^2+n^2,\:m,\:n\in\mathbb{Z}\}.$
+
+(1)证明：若 $s,t{\in}A$,则 $st{\in}A$；
+
+(2)证明：若 s, $t\in A,t\neq0$,则$\frac st=p^2+q^2$,其中 $p,q$ 是有理数.
+\end{exercise}
 \end{document}
