@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  3 MAR 2024 11:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  24 MAR 2024 11:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1504,32 +1504,35 @@ File: image/Venn3.png Graphic file (type bmp)
 File: image/Venn2.png Graphic file (type bmp)
 <image/Venn2.png>
  [7] [8]
-Overfull \hbox (8.36545pt too wide) in paragraph at lines 623--624
-[] []\TU/FZShuSong-Z01(0)/b/n/10.95 练 习 \TU/TeXGyreTermesX(0)/b/n/10.95 1.18 []$[]\OML/cmm/m/it/10.95 x; y; z[][] \OT1/cmr/m/n/10.95 + [] + [] + [] + [][]\OML/cmm/m/it/10.95 :$
+Overfull \hbox (10.19046pt too wide) in paragraph at lines 633--635
+[] []\TU/FZShuSong-Z01(0)/b/n/10.95 练 习 \TU/TeXGyreTermesX(0)/b/n/10.95 1.20 [][] $[]\OML/cmm/m/it/10.95 x; y; z[][] \OT1/cmr/m/n/10.95 + [] + [] + [] + [][]\OML/cmm/m/it/10.95 :$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 623--624
+Underfull \hbox (badness 10000) in paragraph at lines 633--635
 
  []
 
-[9] (./Chapter1.aux)
+[9] [10] (./Chapter1.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `Chapter1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package rerunfilecheck Info: File `Chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: C8DF1504133AA8646B2287869E0ADFC5;394.
+Package rerunfilecheck Info: Checksums for `Chapter1.out':
+(rerunfilecheck)             Before: C8DF1504133AA8646B2287869E0ADFC5;394
+(rerunfilecheck)             After:  8211FE20BFDC8713361520EE5B5C38DF;502.
 Package logreq Info: Writing requests to 'Chapter1.run.xml'.
 \openout1 = `Chapter1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46309 strings out of 476683
- 1009942 string characters out of 5807575
- 1940920 words of memory out of 5000000
- 65734 multiletter control sequences out of 15000+600000
+ 46315 strings out of 476683
+ 1009996 string characters out of 5807575
+ 1941088 words of memory out of 5000000
+ 65740 multiletter control sequences out of 15000+600000
  524316 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Chapter1.pdf (11 pages).
+Output written on Chapter1.pdf (12 pages).
