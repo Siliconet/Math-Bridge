@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  24 MAR 2024 11:12
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  1 MAY 2024 19:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1514,23 +1514,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 633--635
  []
 
 [9] [10] (./Chapter1.aux)
-
-Package rerunfilecheck Warning: File `Chapter1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chapter1.out':
-(rerunfilecheck)             Before: C8DF1504133AA8646B2287869E0ADFC5;394
-(rerunfilecheck)             After:  8211FE20BFDC8713361520EE5B5C38DF;502.
+Package rerunfilecheck Info: File `Chapter1.out' has not changed.
+(rerunfilecheck)             Checksum: 8211FE20BFDC8713361520EE5B5C38DF;502.
 Package logreq Info: Writing requests to 'Chapter1.run.xml'.
 \openout1 = `Chapter1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46315 strings out of 476683
- 1009996 string characters out of 5807575
- 1941088 words of memory out of 5000000
- 65740 multiletter control sequences out of 15000+600000
+ 46333 strings out of 476683
+ 1011302 string characters out of 5807575
+ 1941208 words of memory out of 5000000
+ 65758 multiletter control sequences out of 15000+600000
  524316 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
