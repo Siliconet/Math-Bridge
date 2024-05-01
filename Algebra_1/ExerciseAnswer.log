@@ -1840,7 +1840,11 @@ Here is how much of TeX's memory you used:
 <<<<<<< HEAD
  1946628 words of memory out of 5000000
 =======
+<<<<<<< HEAD
+ 1946628 words of memory out of 5000000
+=======
  1937629 words of memory out of 5000000
+>>>>>>> 0c7b118cbaf4540e3322adc4c628298ae0bc0732
 >>>>>>> 0c7b118cbaf4540e3322adc4c628298ae0bc0732
  67478 multiletter control sequences out of 15000+600000
  529165 words of font info for 119 fonts, out of 8000000 for 9000
