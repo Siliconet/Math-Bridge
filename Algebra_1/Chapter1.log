@@ -1,5 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  1 MAY 2024 19:24
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  1 MAY 2024 19:24
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  23 JUN 2024 12:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1286,27 +1285,27 @@ Package csquotes Info: ... none found.
  (./Chapter1.aux)
 \openout1 = `Chapter1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-Package hyperref Info: Link coloring ON on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+Package hyperref Info: Link coloring ON on input line 48.
  (./Chapter1.out) (./Chapter1.out)
 \@outlinefile=\write8
 \openout8 = `Chapter1.out'.
@@ -1375,10 +1374,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Chapter1.bbl' found.
  (./Chapter1.bbl)
-Package biblatex Info: Reference section=0 on input line 47.
-Package biblatex Info: Reference segment=0 on input line 47.
+Package biblatex Info: Reference section=0 on input line 48.
+Package biblatex Info: Reference segment=0 on input line 48.
 \c@lstlisting=\count559
-Package hyperref Info: Option `pageanchor' set `false' on input line 49.
+Package hyperref Info: Option `pageanchor' set `false' on input line 50.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -1414,34 +1413,34 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 49.
 File: ./figure//cover.jpg Graphic file (type bmp)
 <./figure//cover.jpg>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 49.
+(Font)              scaled to size 10.95pt on input line 50.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 49.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 49.
+(Font)              scaled to size 24.88pt on input line 50.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 50.
  (e:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
  (e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 49.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
  (e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 49.
+(Font)              scaled to size 14.4pt on input line 50.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
+(Font)              scaled to size 10.0pt on input line 50.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 49.
+(Font)              scaled to size 10.95pt on input line 50.
  [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 52.
+(Font)              scaled to size 17.28pt on input line 53.
  (./Chapter1.toc)
 \tf@toc=\write9
 \openout9 = `Chapter1.toc'.
@@ -1453,100 +1452,85 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 73.
+(Font)              scaled to size 12.0pt on input line 74.
 [1
 
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 139.
+(Font)              scaled to size 8.0pt on input line 140.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 139.
+(Font)              scaled to size 6.0pt on input line 140.
 
-Overfull \hbox (5.07518pt too wide) in paragraph at lines 139--140
+Overfull \hbox (5.07518pt too wide) in paragraph at lines 140--141
 []\TU/FZShuSong-Z01(0)/b/n/10.95 例 \TU/TeXGyreTermesX(0)/b/n/10.95 1.2 []\TU/FZShuSong-Z01(0)/m/n/10.95 唐 宋 八 大 家 的 姓 名 组 成 的 集 合 可 以 表 示 为 $\OMS/cmsy/m/n/10.95 f[]g$\TU/FZShuSong-Z01(0)/m/n/10.95 。| 
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 162.
+(Font)              scaled to size 10.0pt on input line 156.
 [2]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
 
 [3]
-LaTeX Font Info:    Trying to load font information for U+ding on input line 220.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 221.
  (e:/texlive/2023/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 ) [4] [5]
 File: image/Venn1.png Graphic file (type bmp)
 <image/Venn1.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 363.
-(Font)              scaled to size 8.0pt on input line 363.
+(Font)              scaled to size 8.0pt on input line 364.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 363.
-(Font)              scaled to size 6.0pt on input line 363.
+(Font)              scaled to size 6.0pt on input line 364.
 File: image/Venn3.png Graphic file (type bmp)
 <image/Venn3.png>
- [6]
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6]
 File: image/Venn2.png Graphic file (type bmp)
 <image/Venn2.png>
  [7] [8]
-Overfull \hbox (10.19046pt too wide) in paragraph at lines 633--635
+Overfull \hbox (10.19046pt too wide) in paragraph at lines 631--633
 [] []\TU/FZShuSong-Z01(0)/b/n/10.95 练 习 \TU/TeXGyreTermesX(0)/b/n/10.95 1.20 [][] $[]\OML/cmm/m/it/10.95 x; y; z[][] \OT1/cmr/m/n/10.95 + [] + [] + [] + [][]\OML/cmm/m/it/10.95 :$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 633--635
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
 
  []
 
-[9] [10] (./Chapter1.aux)
- [7] [8]
-Overfull \hbox (10.19046pt too wide) in paragraph at lines 633--635
-[] []\TU/FZShuSong-Z01(0)/b/n/10.95 练 习 \TU/TeXGyreTermesX(0)/b/n/10.95 1.20 [][] $[]\OML/cmm/m/it/10.95 x; y; z[][] \OT1/cmr/m/n/10.95 + [] + [] + [] + [][]\OML/cmm/m/it/10.95 :$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 633--635
-
- []
-
-[9] [10] (./Chapter1.aux)
+[9] [10] [11] (./Chapter1.aux)
 Package rerunfilecheck Info: File `Chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: 8211FE20BFDC8713361520EE5B5C38DF;502.
 (rerunfilecheck)             Checksum: 8211FE20BFDC8713361520EE5B5C38DF;502.
 Package logreq Info: Writing requests to 'Chapter1.run.xml'.
 \openout1 = `Chapter1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46333 strings out of 476683
- 1011302 string characters out of 5807575
- 1941208 words of memory out of 5000000
- 65758 multiletter control sequences out of 15000+600000
- 46333 strings out of 476683
- 1011302 string characters out of 5807575
- 1941208 words of memory out of 5000000
- 65758 multiletter control sequences out of 15000+600000
+ 46334 strings out of 476683
+ 1011320 string characters out of 5807575
+ 1941244 words of memory out of 5000000
+ 65759 multiletter control sequences out of 15000+600000
  524316 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Chapter1.pdf (12 pages).
-Output written on Chapter1.pdf (12 pages).
+Output written on Chapter1.pdf (13 pages).
