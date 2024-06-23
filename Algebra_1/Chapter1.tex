@@ -309,7 +309,7 @@ $$\{x\mid x\geq0\}$$
   对于集合$A$、$B$，如果有$A\subseteq B$，且$B\subseteq A$，则称集合$A$和$B$\underline{相等}，记作$A=B$。
 \end{definition}
 
-\begin{example}\label{emp:2}
+\begin{example}\label{exp:2}
   判断下列两个集合是否相等。
   $$A=\left\{n\mid n=4k\pm1,k\in\mathbf{Z}\right\};B=\left\{m\mid m=2k+1,k\in\mathbf{Z}\right\}$$
 \end{example}
@@ -537,7 +537,7 @@ $$\{x\mid x\geq0\}$$
   证明上面集合运算的分配律。
 \end{example}
 
-  和例\ref{emp:2}类似，我们用定义来证。但是这里只证明前一个，另外一个留作练习。
+  和例\ref{exp:2}类似，我们用定义来证。但是这里只证明前一个，另外一个留作练习。
 
 \begin{proof}
   首先证明$A\cap(B\cup C)\subseteq(A\cap B)\cup(A\cap C)$.
@@ -604,7 +604,7 @@ $$\{x\mid x\geq0\}$$
 \end{exercise}
 
 \begin{exercise}\label{exer:19}
-  $\text{设}U=\{x\mid x{\in}N,\text{且}x{\leqslant}10\},A=\{1,2,4,5,9\},B{=}\{4,6,7,8,10\},C=\{3,5,7\},\text{求}A\cap B,A\cup B,\bar{A}\cap\bar{B},\bar{A}\cup\bar{B},(A\cap B)\cap C,(A\cup B)\cup C.$
+  $\text{设}U=\{x\mid x{\in}N,\text{且}x{\leqslant}10\},A=\{1,2,4,5,9\},B{=}\{4,6,7,8,10\},C=\{3,5,7\},\text{求:}\\A\cap B,A\cup B,\bar{A}\cap\bar{B},\bar{A}\cup\bar{B},(A\cap B)\cap C,(A\cup B)\cup C.$
 \end{exercise}
 
 \begin{exercise}\label{exer:14}
@@ -644,10 +644,13 @@ $$\{x\mid x\geq0\}$$
 本节只学习一些简易的逻辑，详细的逻辑学我们当然不可能在这里学到（好吧集合也是），如果你对逻辑学感兴趣，你可以阅读其他科普书或专业教材。
 
 \subsection{命题的概念}
-所谓\underline{命题}，就是可供真假判断的陈述语句。比如说，“QQ是一款聊天软件”就是一个命题。如果命题为真，我们称之为\underline{真命题}；如果命题为假，我们称之为\underline{假命题}。这些其实我们初中就学过了。
+
+\begin{definition}{命题}
+  \underline{命题}，是可供真假判断的陈述语句。如果命题为真，我们称之为\underline{真命题}；如果命题为假，我们称之为\underline{假命题}。
+\end{definition}
 
 \begin{remark}
-  一个命题，要么是真命题，要么是假命题，不可能既真又假，也不可能不真不假.有的命题我们目前无法判断真假，如“不存在地外生命”，但它们确实是有真假的.
+  一个命题，要么是真命题，要么是假命题，不可能既真又假，也不可能不真不假。有的命题我们目前无法判断真假，如“不存在地外生命”，但它们确实是有真假的。
 \end{remark}
 
 命题也可以用符号和式子表示.比如说，命题”1小于2”可以表示为“$1<2$.
@@ -656,14 +659,22 @@ $$\{x\mid x\geq0\}$$
 
 这显然是一个假命题.
 
+\hspace*{\fill}
+
+把一个命题的条件和结论互换就可以得到它的\underline{逆命题}。一个非常经典的例子是：“同位角相等，两直线平行”的逆命题是“两直线平行，同位角相等”.我们把像这样的两个命题称为\underline{互逆命题}。
+
+\begin{remark}
+  一个真命题的逆命题并不一定是真命题。
+\end{remark}
+
+\begin{exercise}\label{exer:202405021028}
+  试着举出一个真命题，它的逆命题不是真命题。
+\end{exercise}
+
 
 \subsection{命题的判断与证明}
 
-判断一个命题为假命题，可以举一个\underline{反例}，即举一个满足命题的条件，但不满足命题结论的例子。
-
-判断一个命题为真命题就需要证明了。
-
-证明可以直接证明或者间接证明。一个经典的间接证明方法是\underline{反证法}。
+如果要判断一个命题为假命题，可以举一个\underline{反例}，即举一个满足命题的条件，但不满足命题结论的例子。如果要判断一个命题为真命题就需要\underline{证明}了。证明可以直接证明或者间接证明。直接证明有多种方法，我们将在未来的学习中逐步了解。间接证明即\underline{反证法}。
 
 反证法的基本步骤是这样的：
 
@@ -698,23 +709,61 @@ $$\{x\mid x\geq0\}$$
 
 \end{proof}
 
-\subsection{四种命题形式}
+\subsection{推出关系、充分条件与必要条件}
 我们在初中就已经学过，数学中的命题经常写成“如果……，那么……”的形式，我们把它改成一般形式：
-$$\text{如果}\alpha ,\text{那么}\beta .$$
+$$\text{如果}\alpha ,\text{那么}\beta.$$
 
 其中的$\alpha$称为命题的\underline{条件}，$\beta$称为命题\underline{结论}.
 
-\begin{remark}
-  如果由$\alpha$可以推出$\beta$，那么我们可以写成$\alpha\Rightarrow\beta$，其中的$\Rightarrow$叫做\underline{推出符号}.
-\end{remark}
+\begin{example}
+  在命题“如果$x$是4的倍数，那么$x$是2的倍数”中，条件是“$x$是4的倍数”，结论是“$x$是2的倍数”。
+\end{example}
 
-把一个命题的条件和结论互换就可以得到它的\underline{逆命题}.一个非常经典的例子是：“同位角相等，两直线平行”的逆命题是“两直线平行，同位角相等”.我们把像这样的两个命题称为\underline{互逆命题}.
-
-一个真命题的逆命题并不一定是真命题.
-
-\begin{exercise}\label{exer:202405021028}
-  试着举出这样的一个例子.
+\begin{exercise}
+  在命题“三角形的内角和等于$180^{\circ}$”中，条件和结论分别是什么？
 \end{exercise}
+
+\hspace*{\fill}
+
+\begin{definition}{推出关系、等价命题}\label{def:tuichu}
+  如果$\alpha$通过推理可以得出$\beta$，也就是“若$\alpha$，则$\beta$为真命题“，那么我们可以说“由$\alpha$可以推出$\beta$”，写成$\alpha\Rightarrow\beta$，读作“$\alpha$推出$\beta$”，其中的$\Rightarrow$叫做\underline{推出符号}。否则，我们说“由$\alpha$推不出$\beta$”，记作$\alpha\nRightarrow\beta$，读作“$\alpha$推不出$\beta$”。
+
+  如果由$\alpha$可以推出$\beta$，由$\beta$也可以推出$\alpha$，那么我们称$\alpha$和$\beta$为\underline{等价命题}，记作$\alpha\Leftrightarrow\beta$.
+\end{definition}
+
+\begin{example}\label{exp:202406231441}
+  幼儿园的小朋友都知道，$4>2$，所以，$x>4\Rightarrow x>2$.
+\end{example}
+
+\begin{exercise}
+  参考例\ref{exp:202406231441},思考怎样从集合的观点理解推出关系。
+\end{exercise}
+
+此外，推出关系具有\underline{传递性}，也就是说，如果$\alpha\Rightarrow\beta,\beta\Rightarrow\gamma,$那么$\alpha\Rightarrow\gamma$.
+
+\hspace*{\fill}
+
+现在我们接着定义\ref{def:tuichu}，我们将要给出两个重要的概念。
+
+\begin{definition}{充分条件与必要条件}
+  如果$\alpha\Rightarrow\beta$，称$\alpha$是$\beta$的\underline{充分条件}，$\beta$是$\alpha$的\underline{必要条件}。
+
+  同理，如果$\alpha\nRightarrow\beta$，称$\alpha$不是$\beta$的充分条件，$\beta$不是$\alpha$的必要条件。
+\end{definition}
+
+现在就有一个问题了，我们前面所学的四个概念（现在列在下面）：
+\begin{itemize}
+  \item “如果$\alpha$，那么$\beta$”是真命题;
+  \item $\alpha\Rightarrow\beta$;
+  \item $\alpha$是$\beta$的充分条件;
+  \item $\beta$是$\alpha$的必要条件,
+\end{itemize}
+
+这四个表达有什么关系呢？
+
+回答是，它们没有本质上的区别，讲的都是同一个逻辑关系。
+
+数学这个东西，很多时候都是这样，你会看到许多说法不同，但本质一样的表达。
 
 
 
