@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  26 JUN 2024 21:08
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  27 JUN 2024 14:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1513,19 +1513,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 635--637
 
  []
 
-[10] [11] [12] [13] (./Chapter1.aux)
+[10] [11] [12]
+Missing character: There is no ” ("201D) in font cmr10!
+[13] (./Chapter1.aux)
 Package rerunfilecheck Info: File `Chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: 8211FE20BFDC8713361520EE5B5C38DF;502.
+(rerunfilecheck)             Checksum: 621A88751396D989486FFBC55E88FD5F;698.
 Package logreq Info: Writing requests to 'Chapter1.run.xml'.
 \openout1 = `Chapter1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46428 strings out of 476683
- 1016406 string characters out of 5807575
- 1941573 words of memory out of 5000000
- 65853 multiletter control sequences out of 15000+600000
- 524316 words of font info for 125 fonts, out of 8000000 for 9000
+ 46498 strings out of 476683
+ 1020783 string characters out of 5807575
+ 1941781 words of memory out of 5000000
+ 65919 multiletter control sequences out of 15000+600000
+ 524348 words of font info for 129 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
