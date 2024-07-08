@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  29 JUN 2024 15:22
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  8 JUL 2024 15:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1282,8 +1282,7 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-No file Algebra1.aux.
+ (./Algebra1.aux)
 \openout1 = `Algebra1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1307,11 +1306,10 @@ LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 Package hyperref Info: Link coloring ON on input line 48.
+ (./Algebra1.out) (./Algebra1.out)
 \@outlinefile=\write8
 \openout8 = `Algebra1.out'.
 
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1444,12 +1442,11 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 53.
-
-No file Algebra1.toc.
+ (./Algebra1.toc)
 \tf@toc=\write9
 \openout9 = `Algebra1.toc'.
 
-[1
+ [1
 
 
 
@@ -1462,122 +1459,80 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 140.
+(Font)              scaled to size 8.0pt on input line 137.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 140.
+(Font)              scaled to size 6.0pt on input line 137.
 
-Overfull \hbox (5.07518pt too wide) in paragraph at lines 140--141
+Overfull \hbox (5.07518pt too wide) in paragraph at lines 137--138
 []\TU/FZShuSong-Z01(0)/b/n/10.95 例 \TU/TeXGyreTermesX(0)/b/n/10.95 1.2 []\TU/FZShuSong-Z01(0)/m/n/10.95 唐 宋 八 大 家 的 姓 名 组 成 的 集 合 可 以 表 示 为 $\OMS/cmsy/m/n/10.95 f[]g$\TU/FZShuSong-Z01(0)/m/n/10.95 。| 
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 156.
+(Font)              scaled to size 10.0pt on input line 160.
 [2]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 191.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 190.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 191.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 190.
 
 [3]
-LaTeX Font Info:    Trying to load font information for U+ding on input line 221.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 229.
  (e:/texlive/2023/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
-) [4]
-
-LaTeX Warning: Reference `exp:1' on page 5 undefined on input line 323.
-
-[5]
-
-LaTeX Warning: Reference `img:Venn1' on page 6 undefined on input line 352.
-
+) [4] [5]
 File: image/Venn1.png Graphic file (type bmp)
 <image/Venn1.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 368.
+(Font)              scaled to size 8.0pt on input line 378.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 368.
-
-LaTeX Warning: Reference `img:Venn3' on page 6 undefined on input line 375.
-
+(Font)              scaled to size 6.0pt on input line 378.
+ [6]
 File: image/Venn3.png Graphic file (type bmp)
 <image/Venn3.png>
-[6]
-
-LaTeX Warning: Reference `img:Venn2' on page 7 undefined on input line 414.
-
 File: image/Venn2.png Graphic file (type bmp)
 <image/Venn2.png>
-
-LaTeX Warning: Reference `img:Venn2' on page 7 undefined on input line 428.
-
-[7] [8]
-
-LaTeX Warning: Reference `exp:2' on page 9 undefined on input line 544.
-
-[9]
-Overfull \hbox (10.19046pt too wide) in paragraph at lines 635--637
+ [7] [8] [9]
+Overfull \hbox (10.19046pt too wide) in paragraph at lines 649--651
 [] []\TU/FZShuSong-Z01(0)/b/n/10.95 练 习 \TU/TeXGyreTermesX(0)/b/n/10.95 1.21 [][] $[]\OML/cmm/m/it/10.95 x; y; z[][] \OT1/cmr/m/n/10.95 + [] + [] + [] + [][]\OML/cmm/m/it/10.95 :$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
 
  []
 
-[10]
-
-LaTeX Warning: Reference `exp:202406231441' on page 11 undefined on input line 750.
-
-[11]
-
-LaTeX Warning: Reference `def:tuichu' on page 12 undefined on input line 757.
-
-[12]
+[10] [11] [12]
 Missing character: There is no ” ("201D) in font cmr10!
-[13] (./Algebra1.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `Algebra1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Algebra1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  621A88751396D989486FFBC55E88FD5F;698.
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Algebra1
-(biblatex)                and rerun LaTeX afterwards.
-
+[13] [14]
+Missing character: There is no 、 ("3001) in font cmr10!
+Missing character: There is no 、 ("3001) in font cmr10!
+[15] (./Algebra1.aux)
+Package rerunfilecheck Info: File `Algebra1.out' has not changed.
+(rerunfilecheck)             Checksum: 118380A91C00D94B74BB2A0A553E5BC2;822.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46486 strings out of 476683
- 1020640 string characters out of 5807575
- 1939606 words of memory out of 5000000
- 65917 multiletter control sequences out of 15000+600000
+ 46520 strings out of 476683
+ 1022165 string characters out of 5807575
+ 1942093 words of memory out of 5000000
+ 65943 multiletter control sequences out of 15000+600000
  524348 words of font info for 129 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (15 pages).
+Output written on Algebra1.pdf (17 pages).
