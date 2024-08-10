@@ -98,13 +98,16 @@ CTAN：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
 那么问题来了，$\varnothing \in \{\varnothing\}$是不是正确的？是。因为$\varnothing$是$\{\varnothing\}$当中的一个元素，二者并不相同。
 
 \subsection{集合的特性}
-集合有以下三个特性：\textbf{确定性、互异性、无序性}。
 
-所谓确定性，指的是集合中的每一个元素都是确定的。因此，“我的班上身高比较高的同学”不能构成一个集合，因为身高的高矮之分并没有明确的标准，身高180cm算不算高？身高160cm算不算高？没有一个明确的标准是无法确定身高到底算不算“比较高”的。
+\begin{itemize}
+  \item 确定性：集合中的每一个元素都是确定的。比如说，“我的班上身高比较高的同学”不能构成一个集合。倘若有人发问：身高180cm算不算高？身高160cm算不算高？这就不好回答了。没有一个明确的标准是无法确定身高到底算不算“比较高”的。我们现在把它修改为“我的班上身高大于等于175cm的同学”，这样就可以构成一个集合。
+  
+  \item 无序性：集合中的元素没有确定的顺序。也就是说，集合$\left\{a,b,c \right\}$和集合$\left\{b,a,c \right\}$是同一个集合。
+\end{itemize}
 
-所谓互异性，指的是集合中的元素都互不相同，我们只研究由不同元素构成的集合，这是为了研究的方便。
+按照Thomas J. Jech的《Set Theory》及知乎用户“無雙”的文章（链接：\href{https://zhuanlan.zhihu.com/p/713264884}{https://zhuanlan.zhihu.com/p/713264884}）当中的说法，用列举法表示集合时，集合中的元素可以重复出现，但在计算元素数量时，相同的元素只能算为一个。用列举法时若出现相同的元素，只写一个即可。
 
-所谓无序性，指的是集合中的元素没有确定的顺序。
+但是，现行的高中数学教材（2024.8.10）均认为集合的元素是互不相同的。
 
 \subsection{常用的数集}
 现在来看几个比较常用的数集：
@@ -610,10 +613,6 @@ $$\{x\mid x\geq0\}$$
 
 \begin{exercise}\label{exer:20}
   $\text{设}U=\{\text{小于7的非负整数}\}\text{,}A=\{6\text{的正约数}\}\text{,}B=\{\text{不大于6的素数}\}\text{,}\text{求}\overline{A},\overline{A}\cap B, A\cup\overline{B}.$
-\end{exercise}
-
-\begin{exercise}\label{exer:13}
-  $\text{已知集合}A=\{1\text{,3,}m\}\text{,}B=\{m^2\text{,1}\}\text{,且}A\cup B=A\text{,求}m\text{的值}.$
 \end{exercise}
 
 \begin{exercise}\label{exer:19}
@@ -1134,10 +1133,6 @@ $$\exists x>3,4x-7>0.$$
 \section{全章综合回顾}
 
 \subsection{习题}
-
-\begin{exercise}\label{202407081031}
-  $\text{设}a,b\in\mathbb{R},\text{集合}\{1,a+b,a\}=\left\{0,\dfrac{b}{a},b\right\},\text{则}b-a=$\underline{\hbox to 15mm{}}.
-\end{exercise}
 
 
 
