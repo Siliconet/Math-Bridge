@@ -22,8 +22,11 @@
 \contentsline {subsection}{\numberline {1.4.1}量词}{15}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}逻辑联结词}{16}{subsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.2.1}且}{16}{subsubsection.1.4.2.1}%
-\contentsline {subsubsection}{\numberline {1.4.2.2}或}{16}{subsubsection.1.4.2.2}%
-\contentsline {subsubsection}{\numberline {1.4.2.3}非（否定）}{16}{subsubsection.1.4.2.3}%
-\contentsline {subsection}{\numberline {1.4.3}四种命题形式}{16}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}全章综合回顾}{17}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}习题}{17}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.4.2.2}或}{17}{subsubsection.1.4.2.2}%
+\contentsline {subsubsection}{\numberline {1.4.2.3}非（否定）}{17}{subsubsection.1.4.2.3}%
+\contentsline {subsection}{\numberline {1.4.3}四种命题形式}{17}{subsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.4.4}一些基本的证明方法}{18}{subsection.1.4.4}%
+\contentsline {subsubsection}{\numberline {1.4.4.1}取逆否命题}{18}{subsubsection.1.4.4.1}%
+\contentsline {subsubsection}{\numberline {1.4.4.2}反证法}{19}{subsubsection.1.4.4.2}%
+\contentsline {section}{\numberline {1.5}全章综合回顾}{19}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}习题}{19}{subsection.1.5.1}%

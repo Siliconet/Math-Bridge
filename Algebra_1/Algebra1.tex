@@ -1025,7 +1025,7 @@ $$\text{对所有正整数}x,2x+3\text{是正整数。}$$
 
 $$\forall x\in\mathbb{N}^*,2x+3\in\mathbb{N}^*.$$
 
-一般来说，全称量词命题即为形如“对集合$M$中的所有元素$x$，p(x)”的命题（这里的$p(x)$是一个有关$x$的陈述语句），可以简记为“$\forall x\in M,p(x)$”.
+一般来说，全称量词命题即为形如“对集合$M$中的所有元素$x$，$p(x)$”的命题（这里的$p(x)$是一个有关$x$的陈述语句），可以简记为“$\forall x\in M,p(x)$”.
 
 \hspace*{\fill}
 
@@ -1045,6 +1045,22 @@ $$\exists x>3,4x-7>0.$$
 
 对于存在量词命题，要判断其为真，只需要举出一个满足$p(x)$的$x$即可，要判断其为假，需要验证集合$M$中的所有元素都不满足$p(x)$.
 
+作为全称量词和存在量词的应用，我们现在给出若干集合的并集和交集的表示方法（这些集合的个数可以有限，也可以无限）：
+
+\begin{definition}{集合族}
+  以集合为元素的集合称为\underline{集合族}或\underline{集合类}。
+\end{definition}
+
+\begin{definition}{若干个集合的并集}
+  设$\{E_\alpha\mid\alpha\in I\}$（其中$\alpha$称为\underline{指标}，$I$是由全体指标构成的\underline{指标集}，指标集可以是有限集，也可以是无限集），则这些集合$E_\alpha$的并集定义为$$\bigcup_{\alpha\in I}E_\alpha=\{x\mid\exists\alpha\in I,x\in E_\alpha\}$$
+\end{definition}
+
+\begin{definition}{若干个集合的交集}
+  设$\{E_\alpha\mid\alpha\in I\}$（其中$I$为指标集），则这些集合$E_\alpha$的交集定义为$$\bigcap_{\alpha\in I}E_\alpha=\{x\mid\forall\alpha\in I,x\in E_\alpha\}$$
+\end{definition}
+
+你在学习数学上的$n$维空间时一定会用到这两个概念。
+
 \subsection{逻辑联结词}
 
 \subsubsection{且}
@@ -1059,7 +1075,7 @@ $$\exists x>3,4x-7>0.$$
 
 “或”和“或者”也是在生活中经常被使用的字词。
 
-逻辑学上，我们用“或”联结两个命题，得到的新命题记作“$p\lor q$，读作“$p$或$q$”。
+逻辑学上，我们用“或”联结两个命题$p$和$q$，得到的新命题记作“$p\lor q$，读作“$p$或$q$”。
 
 我们规定，如果$p$和$q$中至少有一个为真，则$p\lor q$为真，如果$p$和$q$均为假，则$p\lor q$为假。这和日常语言中的“或”“或者”并不完全相同。
 
@@ -1081,6 +1097,34 @@ $$\exists x>3,4x-7>0.$$
 
 \subsubsection{非（否定）}
 
+对一个命题$q$进行否定，得到的新命题记作“$\neg q$”，读作“非$q$”或者“$q$的否定”。我们规定，$p$和$\neg q$的真假\underline{相反}。
+
+\begin{example}
+  命题“我现在的年龄是16岁”的否定是“我现在的年龄不是16岁”。
+\end{example}
+
+\begin{example}
+  命题“$x^2+2x+2>0$”的否定是$x^2+2x+1\leq 0$”.
+\end{example}
+
+特别的是，如果一个命题中含有全称量词或者存在量词，在写它的否定时需要做出一些改变。
+
+先来看两个例子：
+
+命题“所有的数都是有理数”的否定是“不是所有的数都是有理数”，换一个说法，就是“存在不是有理数的数”。这里的\textcolor{red}{全称量词}在否定后变为了\textcolor{blue}{存在量词}。
+
+命题“存在无实数解的一元二次方程”的否命题是“所有一元二次方程都有实数解”。这里的\textcolor{blue}{存在量词}在否定后变为了\textcolor{red}{全称量词}。
+
+把上面的内容一般化。“$\exists x\in M, p(x)$”的否定是“$\forall x{\in}M,\neg p(x)$”，“$\forall x\in M, q(x)$”的否定是“$\exists x{\in}M, \neg q(x)$”.
+
+\begin{example}
+  命题“$\forall x>1,x+2>3$”的否定是“$\exists x>1,x+2\leq 3$”.
+\end{example}
+
+\begin{example}
+  命题“$\exists x\in\mathbb{R},x^2-1\geq 0$”的否定是“$\forall x\in\mathbb{R},x^2-1<0$”.
+\end{example}
+
 \subsection{四种命题形式}
 
 我们先给出一个命题：
@@ -1093,19 +1137,19 @@ $$\exists x>3,4x-7>0.$$
 
 现在我们对它做一些变换：
 
-将条件和结论互换，就得到原命题的\underline{逆命题}：
+将条件和结论互换，就得到原命题的\underline{逆命题}（两者为\underline{互逆命题}）：
 
 \begin{equation}\label{NiMingTi}
   \text{如果}q\text{，则}p.
 \end{equation}
 
-分别否定条件和结论，就得到原命题的\underline{否命题}：
+分别否定条件和结论，就得到原命题的\underline{否命题}（两者为\underline{互否命题}）：
 
 \begin{equation}\label{FouMingTi}
   \text{如果}\neg p\text{，则}\neg q.
 \end{equation}
 
-将条件和结论互换并分别否定，就得到原命题的\underline{逆否命题}：
+将条件和结论互换并分别否定，就得到原命题的\underline{逆否命题}（两者\underline{互为逆否命题}）：
 
 \begin{equation}\label{NiFouMingTi}
   \text{如果}\neg q\text{，则}\neg p.
@@ -1113,22 +1157,33 @@ $$\exists x>3,4x-7>0.$$
 
 这就是命题的四种形式。
 
-命题的形式是相对的。如果我们将命题\ref{NiMingTi}看作原命题，那么命题\ref{YuanMingTi}就是它的逆命题。也就是说，命题\ref{YuanMingTi}和\ref{NiMingTi}\textbf{互为}逆命题。我们称这两个命题为\underline{互逆命题}。命题\ref{FouMingTi}和\ref{NiFouMingTi}也是\underline{互逆命题}。
+命题的形式是相对的。
 
-同样地，命题\ref{YuanMingTi}和\ref{FouMingTi}是\underline{互否命题}，命题\ref{NiMingTi}和\ref{NiFouMingTi}也是\underline{互否命题}。
-
-命题\ref{YuanMingTi}和\ref{NiFouMingTi}\underline{互为逆否命题}，命题\ref{FouMingTi}和\ref{NiMingTi}也\underline{互为逆否命题}。
+如果我们将命题\ref{NiMingTi}看作原命题，那么命题\ref{YuanMingTi}就是它的逆命题。也就是说，命题\ref{YuanMingTi}和\ref{NiMingTi}\textbf{互为}逆命题。其余同理。
 
 我们用一张图来表示以上的关系：
 
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.4\textwidth]{image/proposition.png}
-  \caption{命题图示}
+  \caption{命题图示（来源网络）}
   \label{img:proposition}
 \end{figure}
 
+此外，我们给出四种命题的真假性关系。
 
+\begin{itemize}
+  \item 两个命题互为逆否命题，它们的真假性相同；
+  \item 两个命题为互逆命题或互否命题，它们的真假性无关。
+\end{itemize}
+
+\subsection{一些基本的证明方法}
+
+\subsubsection{取逆否命题}
+
+由上一小节最后的真假关系，我们不难想到，倘若直接证明一个命题有难度，我们可以考虑证明它的逆否命题。这是一种“正难则反”的操作。
+
+\subsubsection{反证法}
 
 \section{全章综合回顾}
 
