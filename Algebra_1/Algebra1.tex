@@ -690,7 +690,9 @@ $$\{x\mid x\geq0\}$$
 
 \subsection{命题的判断与证明}
 
-如果要判断一个命题为假命题，可以举一个\underline{反例}，即举一个满足命题的条件，但不满足命题结论的例子。如果要判断一个命题为真命题就需要\underline{证明}了。证明可以直接证明或者间接证明。直接证明有多种方法，我们将在未来的学习中逐步了解。间接证明即\underline{反证法}。
+如果要判断一个命题为假命题，可以举一个\underline{反例}，即举一个满足命题的条件，但不满足命题结论的例子。如果要判断一个命题为真命题就需要\underline{证明}了。
+
+证明可以直接证明或者间接证明。直接证明有多种方法，我们将在未来的学习中逐步了解。间接证明的一种典型方法是\underline{反证法}。
 
 反证法的基本步骤是这样的：
 
@@ -758,9 +760,9 @@ $$\text{如果}\alpha ,\text{那么}\beta.$$
   幼儿园的小朋友都知道，$4>2$，所以，$x>4\Rightarrow x>2$.
 \end{example}
 
-\begin{exercise}\label{202406262000}
+\begin{problem}\label{202406262000}
   参考例\ref{exp:202406231441},思考怎样从集合的观点理解推出关系。
-\end{exercise}
+\end{problem}
 
 此外，推出关系具有\underline{传递性}，也就是说，如果$\alpha\Rightarrow\beta,\beta\Rightarrow\gamma,$那么$\alpha\Rightarrow\gamma$.
 
@@ -953,7 +955,7 @@ $$x=y\text{是}x^2=y^2\text{的}\textbf{充分不必要条件。}$$
 
 \subsection{习题}
 
-\begin{exercise}\label{RJB_P26}
+\begin{exercise}\label{2017RJB_bx1_P26}
   判断下列命题的真假：
 
   （1）存在两个无理数，它们的乘积是有理数；
@@ -995,6 +997,24 @@ $$x=y\text{是}x^2=y^2\text{的}\textbf{充分不必要条件。}$$
   （8）“$\vert a-2\vert\neq2-a$”是“$a\geqslant2$”的\underline{\hbox to 15mm{}}条件。
 \end{exercise}
 
+\begin{exercise}\label{2017_XJ_bx1_P23.8}
+  已知$p$是$r$的充分条件，$r$是$q$的必要条件，同时也是$s$的充分条件，$q$是$s$的必要条件，那么：
+\end{exercise}
+
+\begin{enumerate}
+  \item $s$是$p$的什么条件？
+  \item $p$是$q$的什么条件？
+  \item 在$p,q,r,s$中，哪几对互为充要条件？
+\end{enumerate}
+
+\begin{exercise}\label{2017_RJB_bx1_P36.B5}
+  已知$A=(-\infty,a]$，$B=(-\infty,3)$，且$x\in A$是$x\in B$的充分不必要条件，求$a$的取值范围。
+\end{exercise}
+
+\begin{exercise}\label{zhw2000_g1_P51.78}
+  求证：关于$x$的方程$ax^2+bx+1=0$有一根为1的充要条件是$a+b+c=0$.
+\end{exercise}
+
 \section{量词、逻辑连接词与四种命题形式}
 
 在前面我们已经学习了几个逻辑用语：命题、推出、充分条件和必要条件。
@@ -1009,7 +1029,7 @@ $$x>0;$$
 
 $$x^2+y^2=1.$$
 
-像这样含有变量的语句称为\underline{开语句}。
+像这样含有变量的语句称为\underline{开语句}或者\underline{条件命题}。
 
 但是，倘若我们给开语句的变量赋值以后，情况就不一样了。
 
@@ -1063,6 +1083,8 @@ $$\exists x>3,4x-7>0.$$
 
 \subsection{逻辑联结词}
 
+我们在定义交集和并集的时候用到了“且”和“或”两个逻辑联结词，此时我们只能从日常语言角度理解它们。现在我们从逻辑学角度解释一下它们的用法。
+
 \subsubsection{且}
 
 生活中，人们经常用“且”表示“同时满足”,如公司招聘要求中写“18-55岁\textcolor{red}{且}具有大专学历”。（当然“且”这个字还有别的意思，比如表并列。）
@@ -1097,7 +1119,11 @@ $$\exists x>3,4x-7>0.$$
 
 \subsubsection{非（否定）}
 
-对一个命题$q$进行否定，得到的新命题记作“$\neg q$”，读作“非$q$”或者“$q$的否定”。我们规定，$p$和$\neg q$的真假\underline{相反}。
+对一个命题$q$的\textcolor{blue}{结论}进行否定，得到的新命题记作“$\neg q$”，读作“非$q$”或者“$q$的否定”。我们规定，$p$和$\neg q$的真假\underline{相反}。
+
+\begin{remark}
+  请和后文的“否命题”进行区别。
+\end{remark}
 
 \begin{example}
   命题“我现在的年龄是16岁”的否定是“我现在的年龄不是16岁”。
@@ -1107,22 +1133,34 @@ $$\exists x>3,4x-7>0.$$
   命题“$x^2+2x+2>0$”的否定是$x^2+2x+1\leq 0$”.
 \end{example}
 
-特别的是，如果一个命题中含有全称量词或者存在量词，在写它的否定时需要做出一些改变。
+\subsection{如何正确地写出命题的否定}
+
+如果一个命题中含有全称量词或者存在量词，在写它的否定时需要做出一些改变。
 
 先来看两个例子：
 
 命题“所有的数都是有理数”的否定是“不是所有的数都是有理数”，换一个说法，就是“存在不是有理数的数”。这里的\textcolor{red}{全称量词}在否定后变为了\textcolor{blue}{存在量词}。
 
-命题“存在无实数解的一元二次方程”的否命题是“所有一元二次方程都有实数解”。这里的\textcolor{blue}{存在量词}在否定后变为了\textcolor{red}{全称量词}。
+命题“存在无实数解的一元二次方程”的否定是“所有一元二次方程都有实数解”。这里的\textcolor{blue}{存在量词}在否定后变为了\textcolor{red}{全称量词}。
 
 把上面的内容一般化。“$\exists x\in M, p(x)$”的否定是“$\forall x{\in}M,\neg p(x)$”，“$\forall x\in M, q(x)$”的否定是“$\exists x{\in}M, \neg q(x)$”.
 
 \begin{example}
-  命题“$\forall x>1,x+2>3$”的否定是“$\exists x>1,x+2\leq 3$”.
+  命题“$\forall x>1,x+2>3$”的否定是“$\exists x>1,x+2\leqslant 3$”.
 \end{example}
 
 \begin{example}
-  命题“$\exists x\in\mathbb{R},x^2-1\geq 0$”的否定是“$\forall x\in\mathbb{R},x^2-1<0$”.
+  命题“$\exists x\in\mathbb{R},x^2-1\geqslant 0$”的否定是“$\forall x\in\mathbb{R},x^2-1<0$”.
+\end{example}
+
+命题中含有“且”“或”时，书写它的否定也需要注意。
+
+$p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\lnot p\land \lnot q$.
+
+就是说，书写含“且”“或”的命题的否定时，记得把“且”和“或”换一下。
+
+\begin{example}
+  命题“若$x=1$或$x=2$，则$x(x-1)=0$或$x(x-2)=0$”的否命题是“若$x\neq 1$且$x\neq 2$，则$x(x-1)\neq 0$且$x(x-2)\neq 0$”.
 \end{example}
 
 \subsection{四种命题形式}
@@ -1177,13 +1215,106 @@ $$\exists x>3,4x-7>0.$$
   \item 两个命题为互逆命题或互否命题，它们的真假性无关。
 \end{itemize}
 
-\subsection{一些基本的证明方法}
+\begin{problem}
+  举出这样的例子。
+\end{problem}
 
-\subsubsection{取逆否命题}
+\subsection{取逆否命题证明}
 
 由上一小节最后的真假关系，我们不难想到，倘若直接证明一个命题有难度，我们可以考虑证明它的逆否命题。这是一种“正难则反”的操作。
 
-\subsubsection{反证法}
+直接举一个例子。
+
+\begin{example}
+  判断命题“如果$x+y\neq 3$，那么$x\neq 1$或$y\neq 2$的真假。
+\end{example}
+
+\begin{solution}
+  该命题的逆否命题为：如果$x=1$且$y=3$，那么$x+y=3$.显然为真命题。所以原命题也为真命题。
+\end{solution}
+
+\subsection{习题}
+
+\begin{exercise}
+  用数学符号写出下列命题并判断真假：
+\end{exercise}
+
+\begin{enumerate}
+  \item 所有实数的平方都是正数；
+  \item 存在两个无理数，它们的乘积是有理数；
+  \item 三个连续整数的乘积是6的倍数；
+  \item 大于3的自然数是不等式$x^2>10$的解。
+\end{enumerate}
+
+\begin{exercise}
+  判断下列命题的真假，并写出这些命题的否定（请注意这里有些命题\textcolor{blue}{省略了全称量词}）：
+\end{exercise}
+
+\begin{enumerate}
+  \item 至少有一个整数$n$，$n^2+1$是4的倍数；
+  \item 每个二次函数的图像都是轴对称图形；
+  \item 存在一个四边形，它的四个顶点不共圆；
+  \item 若$x>1$，则$2x+1>5$；
+  \item 若四边形为等腰梯形，则这个四边形的对角线相等；
+  \item $\forall x{\in}\mathbb{R}$，$\dfrac1{x^2+1}{<}1$；
+  \item $\forall a,b{\in}\mathbb{R}$，$a^3+b^3=(a+b)(a^2-ab+b^2)$.
+\end{enumerate}
+
+\begin{exercise}
+  判断下列命题的真假：
+\end{exercise}
+
+\begin{enumerate}
+  \item $\forall x\in(-1, 2), x\in[-1, 2)$；
+  \item $\forall x\in\mathbb{Q}, |x|+x\geqslant0$；
+  \item $\exists x,y\in\mathbb{Z},3x-2y=10$；
+  \item 集合$A$是集合$A\cup B$的子集；
+  \item 集合$A\cap B$是集合$A$的子集；
+  \item 存在有序整数组$(x,y)$满足$xy=x+y$.
+\end{enumerate}
+
+\begin{exercise}
+  用联结词“且”和“或”分别联结下面各组命题组成新命题，并判断它们的真假：
+\end{exercise}
+
+\begin{enumerate}
+  \item $p$：$17<20$；$q$：$17=20$.
+  \item $p$：平行四边形对角线互相平分；$q$：平行四边形的对角线相等。
+  \item $p$：4是素数；$q$：4不是奇数；
+  \item $p$：能被5整除的整数的个位数一定为5；$q$：能被5整除的整数的个位数一定为0。
+\end{enumerate}
+
+\begin{exercise}
+  写出下列命题的非：
+\end{exercise}
+
+\begin{enumerate}
+  \item $\forall x\in\mathbb{R},3x=2x+x$；
+  \item $\exists x\in\mathbb{N},x^2=x+2$；
+  \item 至少有一个锐角$\alpha$，使$\sin\alpha=0$；
+  \item $a,b$都是有理数。
+\end{enumerate}
+
+\begin{exercise}
+  写出下列命题的逆命题、否命题和逆否命题并判断真假：
+\end{exercise}
+
+\begin{enumerate}
+  \item 线段的垂直平分线上的点到这条线段两个端点的距离相等；
+  \item 矩形的对角线相等；
+  \item 如果$x=y=0$，那么$(x-y)(x+y)=0$；
+  \item 对顶角相等。
+\end{enumerate}
+
+\begin{exercise}\label{2003RJA_xx2-1_P7.exp4}
+  证明：若$x^2+y^2=0$，则$x=y=0$.
+\end{exercise}
+
+\subsection{补充材料}
+
+\subsubsection{de Morgan定律}
+
+\section{映射}
 
 \section{全章综合回顾}
 
