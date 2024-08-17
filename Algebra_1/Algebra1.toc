@@ -28,8 +28,10 @@
 \contentsline {subsection}{\numberline {1.4.4}四种命题形式}{18}{subsection.1.4.4}%
 \contentsline {subsection}{\numberline {1.4.5}取逆否命题证明}{19}{subsection.1.4.5}%
 \contentsline {subsection}{\numberline {1.4.6}习题}{19}{subsection.1.4.6}%
-\contentsline {subsection}{\numberline {1.4.7}补充材料}{20}{subsection.1.4.7}%
-\contentsline {subsubsection}{\numberline {1.4.7.1}de Morgan定律}{20}{subsubsection.1.4.7.1}%
-\contentsline {section}{\numberline {1.5}映射}{20}{section.1.5}%
-\contentsline {section}{\numberline {1.6}全章综合回顾}{20}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}习题}{20}{subsection.1.6.1}%
+\contentsline {section}{\numberline {1.5}全章综合回顾}{20}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}补充材料}{20}{subsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.1}de Morgan定律}{20}{subsubsection.1.5.1.1}%
+\contentsline {subsubsection}{\numberline {1.5.1.2}Russell悖论}{20}{subsubsection.1.5.1.2}%
+\contentsline {subsection}{\numberline {1.5.2}习题}{20}{subsection.1.5.2}%
+\contentsline {chapter}{\numberline {第二章}函数}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}映射与函数}{21}{section.2.1}%

@@ -16,6 +16,7 @@
 
 \usepackage{graphicx}
 \usepackage{amssymb}
+\usepackage{epigraph}
 
 \title{数学之桥:从初等数学到微积分}
 \subtitle{Powered by \LaTeX.}
@@ -1310,16 +1311,55 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   证明：若$x^2+y^2=0$，则$x=y=0$.
 \end{exercise}
 
+\section{全章综合回顾}
+
 \subsection{补充材料}
 
 \subsubsection{de Morgan定律}
 
-\section{映射}
-
-\section{全章综合回顾}
+\subsubsection{Russell悖论}
 
 \subsection{习题}
 
+\chapter{函数}
 
+\epigraph{不借助函数却想去做微积分，这无疑会是你所能做的最无意义的事情之一.如果微积分也有其营养成分表，那么函数肯定会排在最前面，而且是占一定优势.}{《普林斯顿微积分读本》}
+
+在开始讲函数之前，我们先来看看函数的历史（更具体的可参见《古今数学思想（第一册）》和《古今数学思想（第四册）》（Morris Kiline著），此处对此作一些概括）。
+
+首先是Galileo（伽利略，1564-1642）。Galileo在其著作《两门新科学》中，用文字和比例的语言表达函数关系。随着代数符号化的发展，不久后他就用$s=kt^2$来表示落体距离（放在现在就类似于自由落体运动的下落距离$h=\dfrac{1}{2}gt^2$）。
+
+十七世纪，James Gregory（格雷戈里，1638-1675）在其论文《论圆和双曲线的求积》中定义函数为这样一个量：它是从一些其他的量经过一系列代数运算而得到的，或者经过任何其他可以想象到的运算而得到的。
+
+此外，Newton（牛顿，1643-1727）用“流量”一词表示变量间的关系，Leibniz（莱布尼茨，1646-1716）用“函数”表示任何一个随着曲线上的点的变动而变动的量（如切线和纵坐标）。后来的Lagrange则用“函数”一词表示几乎是任意类型的对一个或多个变量的依赖关系。
+
+1734年，Euler（欧拉，1707-1783）引进了记号$f(x)$，这也是我们现在所使用的记号。
+
+1887年，Dedekind（戴德金，1831-1916）给出了“映射”的概念。现阶段，我们使用映射来定义函数。
+
+\section{映射与函数}
+
+\begin{definition}{映射/函数}
+  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有唯一确定的元素$y$按法则$f$与之对应，则称$f$为从$A$到$B$的\underline{映射}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+
+  \textbf{映射也称为函数}。
+\end{definition}
+
+这个定义是比较抽象的，下面举几个例子。
+
+\begin{example}
+  我们设$A=\left\{1,-1,2,-2,3,-3\right\}$，$B=\left\{1,4,9\right\}$，对应法则为“平方”，则我们可以画出下图表示从$A$到$B$的映射：
+\end{example}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.2\textwidth]{image/map2.1.1.png}
+  \caption{一个对应法则为“平方”的映射（图源：《高级中学课本（试用） 代数 第一册（甲种本）》）}
+  \label{img:proposition}
+\end{figure}
+
+\begin{example}
+  
+\end{example}
 
 \end{document}

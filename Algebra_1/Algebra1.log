@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  16 AUG 2024 21:05
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  17 AUG 2024 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1270,7 +1270,16 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip139
 \cfttabindent=\skip140
 \cfttabnumwidth=\skip141
-)) (e:/texlive/2023/texmf-dist/tex/latex/cprotect/cprotect.sty
+)) (e:/texlive/2023/texmf-dist/tex/latex/epigraph/epigraph.sty
+Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
+ (e:/texlive/2023/texmf-dist/tex/latex/nextpage/nextpage.sty
+Package: nextpage 2009/09/03 v1.1a additional page commands
+)
+\beforeepigraphskip=\skip142
+\afterepigraphskip=\skip143
+\epigraphwidth=\skip144
+\epigraphrule=\skip145
+) (e:/texlive/2023/texmf-dist/tex/latex/cprotect/cprotect.sty
 Package: cprotect 2011/01/27 v1.0e (Bruno Le Floch)
  (e:/texlive/2023/texmf-dist/tex/latex/bigfoot/suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
@@ -1285,27 +1294,27 @@ Package csquotes Info: ... none found.
  (./Algebra1.aux)
 \openout1 = `Algebra1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-Package hyperref Info: Link coloring ON on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+Package hyperref Info: Link coloring ON on input line 49.
  (./Algebra1.out) (./Algebra1.out)
 \@outlinefile=\write8
 \openout8 = `Algebra1.out'.
@@ -1375,10 +1384,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Algebra1.bbl' not found.
 
 No file Algebra1.bbl.
-Package biblatex Info: Reference section=0 on input line 48.
-Package biblatex Info: Reference segment=0 on input line 48.
+Package biblatex Info: Reference section=0 on input line 49.
+Package biblatex Info: Reference segment=0 on input line 49.
 \c@lstlisting=\count559
-Package hyperref Info: Option `pageanchor' set `false' on input line 50.
+Package hyperref Info: Option `pageanchor' set `false' on input line 51.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: xetex
 * paper: a4paper
@@ -1414,34 +1423,34 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 50.
 File: ./figure//cover.jpg Graphic file (type bmp)
 <./figure//cover.jpg>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 50.
+(Font)              scaled to size 10.95pt on input line 51.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 50.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 50.
+(Font)              scaled to size 24.88pt on input line 51.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 51.
 (e:/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
  (e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 50.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (e:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 14.4pt on input line 50.
+(Font)              scaled to size 14.4pt on input line 51.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 10.0pt on input line 50.
+(Font)              scaled to size 10.0pt on input line 51.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 50.
+(Font)              scaled to size 10.95pt on input line 51.
  [1
 
 
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 53.
+(Font)              scaled to size 17.28pt on input line 54.
  (./Algebra1.toc)
 \tf@toc=\write9
 \openout9 = `Algebra1.toc'.
@@ -1453,56 +1462,56 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 74.
+(Font)              scaled to size 12.0pt on input line 75.
 [1
 
 
 ]
-Overfull \hbox (47.12146pt too wide) in paragraph at lines 108--109
+Overfull \hbox (47.12146pt too wide) in paragraph at lines 109--110
 []\TU/FZShuSong-Z01(0)/m/n/10.95 按 照 \TU/TeXGyreTermesX(0)/m/n/10.95 Thomas J. Jech \TU/FZShuSong-Z01(0)/m/n/10.95 的  |《\TU/TeXGyreTermesX(0)/m/n/10.95 Set Theory\TU/FZShuSong-Z01(0)/m/n/10.95 》|  及 知 乎 用 户  |“無 雙”|  的 文 章  |（链 接：| [][]\TU/TeXGyreTermesX(0)/m/n/10.95 https://zhuanlan.zhihu.com/p/713264884[][]\TU/FZShuSong-Z01(0)/m/n/10.95 ）|
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 140.
+(Font)              scaled to size 8.0pt on input line 141.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 140.
+(Font)              scaled to size 6.0pt on input line 141.
 
-Overfull \hbox (5.07518pt too wide) in paragraph at lines 140--141
+Overfull \hbox (5.07518pt too wide) in paragraph at lines 141--142
 []\TU/FZShuSong-Z01(0)/b/n/10.95 例 \TU/TeXGyreTermesX(0)/b/n/10.95 1.2 []\TU/FZShuSong-Z01(0)/m/n/10.95 唐 宋 八 大 家 的 姓 名 组 成 的 集 合 可 以 表 示 为 $\OMS/cmsy/m/n/10.95 f[]g$\TU/FZShuSong-Z01(0)/m/n/10.95 。| 
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 158.
+(Font)              scaled to size 10.0pt on input line 159.
 [2]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 193.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 194.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 193.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 194.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 193.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 194.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 193.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 194.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 193.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 194.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 193.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 194.
 
 [3]
-LaTeX Font Info:    Trying to load font information for U+ding on input line 232.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 233.
  (e:/texlive/2023/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 ) [4] [5]
 File: image/Venn1.png Graphic file (type bmp)
 <image/Venn1.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 381.
+(Font)              scaled to size 8.0pt on input line 382.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 381.
+(Font)              scaled to size 6.0pt on input line 382.
  [6]
 File: image/Venn3.png Graphic file (type bmp)
 <image/Venn3.png>
@@ -1520,23 +1529,39 @@ File: image/proposition.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19] [20] (./Algebra1.aux)
+[18] [19] [20]
+Chapter 2.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/it' will be
+(Font)              scaled to size 10.95pt on input line 1345.
+
+LaTeX Font Warning: Font shape `TU/FZShuSong-Z01(0)/b/it' undefined
+(Font)              using `TU/FZShuSong-Z01(0)/b/n' instead on input line 1345.
+
+[21
+
+]
+File: image/map2.1.1.png Graphic file (type bmp)
+<image/map2.1.1.png>
+ [22] (./Algebra1.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `Algebra1.out' has not changed.
-(rerunfilecheck)             Checksum: 09ED705F5C343D69E4225219030E484B;978.
+(rerunfilecheck)             Checksum: 68D02E1BC6DDDA225250C61F4B075A5D;1092.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46627 strings out of 476683
- 1028175 string characters out of 5807575
- 1941423 words of memory out of 5000000
- 66050 multiletter control sequences out of 15000+600000
- 524348 words of font info for 129 fonts, out of 8000000 for 9000
+ 46822 strings out of 476683
+ 1035861 string characters out of 5807575
+ 1943078 words of memory out of 5000000
+ 66230 multiletter control sequences out of 15000+600000
+ 526100 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (22 pages).
+Output written on Algebra1.pdf (24 pages).
