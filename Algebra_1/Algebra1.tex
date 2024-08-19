@@ -12,18 +12,19 @@
 \newcommand*{\kaiti}{\CJKfamily{zhkai}} % 楷体
 \newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
 \newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
-\linespread{1.35}
+\linespread{1.3}
 
 \usepackage{graphicx}
 \usepackage{amssymb}
 \usepackage{epigraph}
+\usepackage{setspace}
 
 \title{数学之桥:从初等数学到微积分}
 \subtitle{Powered by \LaTeX.}
 
 \author{Siliconet}
 \date{始于2023年}
-\version{1.0}
+\version{0.1}
 \bioinfo{模板}{ElegantBook}
 
 \extrainfo{你站在桥上看风景，看风景人在楼上看你。明月装饰了你的窗子，你装饰了别人的梦。}
@@ -106,7 +107,7 @@ CTAN：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
   \item 无序性：集合中的元素没有确定的顺序。也就是说，集合$\left\{a,b,c \right\}$和集合$\left\{b,a,c \right\}$是同一个集合。
 \end{itemize}
 
-按照Thomas J. Jech的《Set Theory》及知乎用户“無雙”的文章（链接：\href{https://zhuanlan.zhihu.com/p/713264884}{https://zhuanlan.zhihu.com/p/713264884}）当中的说法，用列举法表示集合时，集合中的元素可以重复出现，但在计算元素数量时，相同的元素只能算为一个。用列举法时若出现相同的元素，只写一个即可。
+按照Thomas J. Jech的《Set Theory》及知乎“無雙”的文章（链接：\href{https://zhuanlan.zhihu.com/p/713264884}{https://zhuanlan.zhihu.com/p/713264884}）当中的说法，用列举法表示集合时，集合中的元素可以重复出现，但在计算元素数量时，相同的元素只能算为一个。用列举法时若出现相同的元素，只写一个即可。
 
 但是，现行的高中数学教材（2024.8.10）均认为集合的元素是互不相同的。
 
@@ -376,7 +377,7 @@ $$\{x\mid x\geq0\}$$
   我们研究集合间的关系时，这些集合可能都是某一个给定的集合的子集，我们称这个给定的集合为\underline{全集}。我们一般记全集为$U$。比如说，解不等式时，我们默认全集为$\mathbb{R}$。
 
   接下来是补集。
-\begin{definition}
+\begin{definition}{补集}
   设全集为$U$，集合$A\subseteq U$，由$U$中所有不属于$A$的元素组成的集合称为$A$在$U$中的\underline{补集}，记作${\complement}_{U}A$（若不会产生歧义，即只有一个全集的情况下，也可以记作$\overline{A}$或者$A^c$）.读作“$A$在$U$中的补集”。即
 
   $${\complement}_{U}A=\{x|x\in I\text{,且}x\notin A\}.$$
@@ -436,7 +437,7 @@ $$\{x\mid x\geq0\}$$
   \end{figure}
   图中深蓝色部分即为$A\cap B$。
 
-\begin{definition}
+\begin{definition}{并集}
   设$A$,$B$为两个集合，由$A$和$B$中所有元素组成的集合称为$A$和$B$的\underline{并集}，记作$A\cup B$，即
   $$A\cup B=\{x\in A\text{或}x\in B\}$$
 \end{definition}
@@ -852,7 +853,9 @@ $$\text{如果}\alpha ,\text{那么}\beta.$$
 
   （5）若$x,y$都能被5整除，则$x+y$也能被5整除；
 
-  （6）如果$\frac{a}{b}=\frac{c}{d}$,则$\frac{a+b}{b}=\frac{c+d}{d}$.
+  \begin{spacing}{2.0}
+    （6）如果$\dfrac{a}{b}=\dfrac{c}{d}$,则$\dfrac{a+b}{b}=\dfrac{c+d}{d}$.
+  \end{spacing}
 \end{exercise}
 
 \hspace*{\fill}
@@ -949,9 +952,12 @@ $$x=y\text{是}x^2=y^2\text{的}\textbf{充分不必要条件。}$$
 
   再证必要性，
   
+\begin{spacing}{1.8}
   若关于$x$的实系数一元二次方程$ax^2+bx+c=0$有两个相等的实数根，则由一元二次方程根与系数的关系可得$x_{1}+x_{2}=2x_{1}=-\dfrac{b}{a},x_{1}x_{2}=x_{1}^{2}=\dfrac{c}{a},$
 
   因此$\left(-\dfrac{b}{2a}\right)^{2}=\dfrac{c}{a}$，即$b^2-4ac=0$.
+\end{spacing}
+
 \end{proof}
 
 \subsection{习题}
@@ -967,11 +973,14 @@ $$x=y\text{是}x^2=y^2\text{的}\textbf{充分不必要条件。}$$
 
   （4）集合$A\cap B$是集合$A$的子集；
 
-  （5）如果$\dfrac ab=\dfrac cd$,则$\dfrac{a+b}b=\dfrac{c+d}{d}$；
+\begin{spacing}{2.0}
+    （5）如果$\dfrac ab=\dfrac cd$,则$\dfrac{a+b}b=\dfrac{c+d}{d}$；
 
   （6）一元三次方程都有三个不同的实数根；
   
   （7）如果$\dfrac ab=\dfrac cd\neq 1$,则$\dfrac a{b-a}=\dfrac c{d-c}$.
+\end{spacing}
+
 \end{exercise}
 
 \begin{exercise}\label{202407081520}
@@ -1257,8 +1266,10 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \item 存在一个四边形，它的四个顶点不共圆；
   \item 若$x>1$，则$2x+1>5$；
   \item 若四边形为等腰梯形，则这个四边形的对角线相等；
-  \item $\forall x{\in}\mathbb{R}$，$\dfrac1{x^2+1}{<}1$；
-  \item $\forall a,b{\in}\mathbb{R}$，$a^3+b^3=(a+b)(a^2-ab+b^2)$.
+  \begin{spacing}{1.7}
+     \item $\forall x{\in}\mathbb{R}$，$\dfrac1{x^2+1}{<}1$；
+  \end{spacing}
+   \item $\forall a,b{\in}\mathbb{R}$，$a^3+b^3=(a+b)(a^2-ab+b^2)$.
 \end{enumerate}
 
 \begin{exercise}
@@ -1339,11 +1350,25 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 
 \section{映射与函数}
 
-\begin{definition}{映射/函数}
-  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有唯一确定的元素$y$按法则$f$与之对应，则称$f$为从$A$到$B$的\underline{映射}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+\subsection{映射/函数的定义}
 
-  \textbf{映射也称为函数}。
+开头先说明一下，\textbf{映射也称为函数}。
+
+我们先给出映射的定义，再给例子。
+
+\begin{definition}{映射/函数}
+  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应，则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+
+  若我们知道$f(x)$的表达式（如\ref{MapExample2}），则使得$f(x)$有意义的所有$x$组成的集合称为\underline{自然定义域}。
 \end{definition}
+
+\begin{remark}
+  考虑到一元函数（只有一个变量的函数，我们接下来就要讨论这个）和多元函数（有多个变量的函数，本读本可能不讲）的统一，我们采用了这种广义的定义方式。这种定义和Walter Rudin所著的《数学分析原理》相同，但和国内现行的许多教材可能不尽相同。这些教材一般在定义函数时限定定义域和值域为$\mathbb{R}$的子集，也就是定义了一元函数。\textcolor{red}{接下来，为了叙述的便利，在没有特殊说明的情况下，我们的“函数”也指的是一元函数，如初中所学的一次函数$y=2x$.}
+\end{remark}
+
+\begin{remark}
+  值域也可以这样表示：$$\left\{f(x)\mid x\in A\right\}.$$
+\end{remark}
 
 这个定义是比较抽象的，下面举几个例子。
 
@@ -1358,8 +1383,99 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \label{img:proposition}
 \end{figure}
 
-\begin{example}
-  
+\begin{example}\label{MapExample2}
+  让每一个$x\in\mathbb{R}$对应$2x$，就可以给出一个从$\mathbb{R}$到$\mathbb{R}$的映射$$f:\mathbb{R}\rightarrow\mathbb{R}.$$此时我们就可以写成：$$f(x)=2x(x\in\mathbb{R}).$$这里的$(x\in\mathbb{R})$由于是自然定义域，通常可以省去不写，直接写$f(x)=2x$.
 \end{example}
+
+\begin{spacing}{2.0}
+  \begin{example}
+    函数$f(x)=\dfrac{2}{x}$的自然定义域是$(-\infty,0)\cup(0,+\infty)$，此时的值域是$(-\infty,0)\cup(0,+\infty)$.
+  \end{example}
+  
+  \begin{example}
+    函数$f(x)=\dfrac{1}{\sqrt{x-1}}$的自然定义域是$(1,+\infty)$，值域是$(0,+\infty)$.
+  \end{example}
+  
+  下面是更具体一些的例子。
+  
+  \begin{example}
+    求下列函数的自然定义域：
+  \end{example}
+  
+  \begin{enumerate}
+    \item $f(x)=\dfrac{\sqrt{x}+2}{\sqrt{x}-3}$；
+    \item $f(x)=\dfrac{3x}{\left| x \right|-x}$.
+  \end{enumerate}
+\end{spacing}
+
+\begin{solution}
+  \begin{enumerate}
+    \item 函数$f(x)$有意义当且仅当
+     $\begin{cases}
+        x>0
+        \\\sqrt{x}-3\neq 0
+      \end{cases}$
+    ，解得$0<x<9$或$x>9$，所以$f(x)$的定义域为$(0,9)\cup (9,+\infty)$.
+
+    \item 函数$f(x)$有意义当且仅当$\left| x \right|\neq x$，即$x<0$，所以$f(x)$的定义域为$(-\infty,0).$
+  \end{enumerate}
+\end{solution}
+
+\begin{spacing}{2.0}
+  \begin{example}
+    求下列函数的值域：
+  \end{example}
+  
+  \begin{enumerate}
+    \item $f(x)=\dfrac{\sqrt{x}+2}{\sqrt{x}-3}$;
+    \item $y=2x-\sqrt{x-1}$;
+  \end{enumerate}
+\end{spacing}
+
+给出解法之前先说明一下，函数的记号不一定要用$f(x)$，也可以用其他字符表示不同的对应关系，比如说$g(x),\phi (x),Loss(x)$，如果自变量的记号也是其它字符，比如$y$，那么就可以写成类似$g(y)$的形式。不同的记号用来表示不同的函数，可以有效避免混淆。
+
+\begin{solution}
+  \begin{enumerate}
+    \item $f(x)=\dfrac{\sqrt{x}+2}{\sqrt{x}-3}=1+\dfrac{5}{\sqrt{x}-3}$，
+    
+    令$y=\sqrt{x}-3$，则$y$的取值范围为$[-3,0)\cup (0,\infty)$，再令$g(y)=\dfrac{5}{y}$，由初中反比例函数的知识可得$g(y)$的值域为$(-\infty,-\dfrac{5}{3}]\cup (0,+\infty)$.
+
+    因为$f(x)=1+g(y)$，所以$f(x)$的值域为$(-\infty,-\dfrac{2}{3}]\cup (1,+\infty)$.
+
+    \item 令$t=\sqrt{x-1}$（换元），则$t\geqslant 0,x=t^2+1,y=2t^2-t+2=2(t-\dfrac{1}{4})^2+\dfrac{15}{8}\geqslant\dfrac{15}{8}$，\textcolor{blue}{当且仅当$t=\dfrac{1}{4}$时等号成立}。所以函数的值域为$[\dfrac{15}{8},+\infty).$
+  \end{enumerate}
+\end{solution}
+
+\textbf{定义域、对应法则、值域}是函数的三要素。
+
+\subsection{单射、满射与一一映射}
+
+\begin{definition}{映射的相等}
+  设$f:A\rightarrow B$，且$g:A\rightarrow B$，若$\forall x\in A,f(x)=g(x)$，则称映射（函数）$f$和$g$是\underline{相等}的。记作$f=g$.
+\end{definition}
+
+通俗地解释就是三要素相同。
+
+\begin{example}
+  函数$y=x$和$y=\sqrt{x^2}$相等，和$u=\sqrt[3]{x^3}$相等，但和$y=\dfrac{x^2}{x}$不相等。
+\end{example}
+
+\begin{definition}{单射}
+  设$f:A\rightarrow B$，若对任意$x,y\in A$，且$x\neq y$，有$f(x)\neq f(y)$，则称$f$为\underline{单射}。
+\end{definition}
+
+也就是说，不同的$x$所对应的函数值都不相等。
+
+\begin{definition}{满射}
+  设$f:A\rightarrow B$，若$f$的值域与$B$相等，则称$f$为从$A$到$B$的\underline{满射}。
+\end{definition}
+
+也就是说，$B$中的任意元素都能找到原像。
+
+\begin{definition}{一一映射}
+  设$f:A\rightarrow B$，如果$f$既是单射又是满射，则称$f$为\underline{一一映射}。
+\end{definition}
+
+也就是一一对应的关系。
 
 \end{document}
