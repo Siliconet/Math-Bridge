@@ -1354,23 +1354,31 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 
 开头先说明一下，\textbf{映射也称为函数}。
 
-我们先给出映射的定义，再给例子。
+我们先给出映射的定义以及两个注释，再给例子。
 
 \begin{definition}{映射/函数}
-  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应，则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应（可以多对一，也可以一对一，但不能一对多），则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
 
   若我们知道$f(x)$的表达式（如\ref{MapExample2}），则使得$f(x)$有意义的所有$x$组成的集合称为\underline{自然定义域}。
 \end{definition}
 
 \begin{remark}
-  考虑到一元函数（只有一个变量的函数，我们接下来就要讨论这个）和多元函数（有多个变量的函数，本读本可能不讲）的统一，我们采用了这种广义的定义方式。这种定义和Walter Rudin所著的《数学分析原理》相同，但和国内现行的许多教材可能不尽相同。这些教材一般在定义函数时限定定义域和值域为$\mathbb{R}$的子集，也就是定义了一元函数。\textcolor{red}{接下来，为了叙述的便利，在没有特殊说明的情况下，我们的“函数”也指的是一元函数，如初中所学的一次函数$y=2x$.}
+  考虑到一元函数（按初中理解方式，就是只有一个变量的函数，我们接下来就要讨论这个）和多元函数（有多个变量的函数，本读本可能不讲）的统一，我们采用了这种广义的定义方式。
 \end{remark}
 
 \begin{remark}
   值域也可以这样表示：$$\left\{f(x)\mid x\in A\right\}.$$
 \end{remark}
 
-这个定义是比较抽象的，下面举几个例子。
+下面我们给出一元函数的定义。
+
+\begin{definition}{一元函数}
+  我们称函数$f:\mathbb{R}\rightarrow\mathbb{R}$为\underline{一元函数}。
+\end{definition}
+
+\textcolor{blue}{此后，若无特殊说明，本读本中的函数均指的是一元函数。}
+
+举几个例子。
 
 \begin{example}
   我们设$A=\left\{1,-1,2,-2,3,-3\right\}$，$B=\left\{1,4,9\right\}$，对应法则为“平方”，则我们可以画出下图表示从$A$到$B$的映射：
@@ -1384,7 +1392,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 \end{figure}
 
 \begin{example}\label{MapExample2}
-  让每一个$x\in\mathbb{R}$对应$2x$，就可以给出一个从$\mathbb{R}$到$\mathbb{R}$的映射$$f:\mathbb{R}\rightarrow\mathbb{R}.$$此时我们就可以写成：$$f(x)=2x(x\in\mathbb{R}).$$这里的$(x\in\mathbb{R})$由于是自然定义域，通常可以省去不写，直接写$f(x)=2x$.
+  让每一个$x\in\mathbb{R}$对应$2x$，就可以给出一个从$\mathbb{R}$到$\mathbb{R}$的映射$$f:\mathbb{R}\rightarrow\mathbb{R}.$$此时我们就可以写成：$$f(x)=2x(x\in\mathbb{R}).$$这里的$(x\in\mathbb{R})$由于是自然定义域，通常可以省去不写，直接写$f(x)=2x$，\textcolor{blue}{读作}“$fx$等于$2x$。
 \end{example}
 
 \begin{spacing}{2.0}
@@ -1432,7 +1440,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \end{enumerate}
 \end{spacing}
 
-给出解法之前先说明一下，函数的记号不一定要用$f(x)$，也可以用其他字符表示不同的对应关系，比如说$g(x),\phi (x),Loss(x)$，如果自变量的记号也是其它字符，比如$y$，那么就可以写成类似$g(y)$的形式。不同的记号用来表示不同的函数，可以有效避免混淆。
+给出解法之前先说明一下，函数的记号不一定要用$f(x)$，也可以用其他字符表示不同的对应关系，比如说$g(x),\phi (x)$，甚至是$Loss(x)$，如果定义域中的元素记号也用其它字符表示，比如$y$，那么就可以写成类似$f(y),g(y)$的形式。不同的记号用来表示不同的函数，可以有效避免混淆。
 
 \begin{solution}
   \begin{enumerate}
@@ -1446,36 +1454,140 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \end{enumerate}
 \end{solution}
 
-\textbf{定义域、对应法则、值域}是函数的三要素。
+\begin{spacing}{2.0}
+  \textbf{定义域、对应法则、值域}是函数的三要素。但是，函数不一定能用公式或图像表示。比如说下面的两个例子。
+\end{spacing}
+
+\begin{example}
+  Euler（欧拉）函数$\phi (n)$表示小于等于$n$且和$n$互质的数的个数。我们并不能写出这个函数的表达式，但是这样一个对应关系确实满足函数的定义。
+\end{example}
+
+下面的函数我们采用分段表示（写成\underline{分段函数}的形式），写法是先写表达式，然后写一个逗号，在逗号后加上取值范围。
+
+\begin{example}
+  Dirichlet（狄利克雷）函数定义为
+  $$f(x)=
+  \begin{cases}
+    1,x\in\mathbb{Q}
+    \\0,x\in\complement_{\mathbb{R}}\mathbb{Q}
+  \end{cases},$$
+  这个函数我们能写出表达式，但是画不出图像（图像的问题我们后面讨论）。
+\end{example}
+
+最后来看一个有趣的函数。
+
+\begin{example}
+  符号函数$sgn(x)$定义为
+  $$sgn(x)=
+  \begin{cases}
+    1,x>0
+    \\0,x=0
+    \\-1,x<0
+  \end{cases},$$
+\end{example}
 
 \subsection{单射、满射与一一映射}
 
 \begin{definition}{映射的相等}
-  设$f:A\rightarrow B$，且$g:A\rightarrow B$，若$\forall x\in A,f(x)=g(x)$，则称映射（函数）$f$和$g$是\underline{相等}的。记作$f=g$.
+  设$f:A\rightarrow B$，且$g:A\rightarrow B$，若$\forall x\in A,f(x)=g(x)$，则称映射$f$和$g$是\underline{相等}的。记作$f=g$.
 \end{definition}
 
 通俗地解释就是三要素相同。
 
 \begin{example}
-  函数$y=x$和$y=\sqrt{x^2}$相等，和$u=\sqrt[3]{x^3}$相等，但和$y=\dfrac{x^2}{x}$不相等。
+  函数$y=x$和$y=\sqrt{x^2}$相等，和$u=\sqrt[3]{x^3}$相等，但和$y=\dfrac{x^2}{x}$不相等，因为定义域和值域不同。
 \end{example}
 
 \begin{definition}{单射}
   设$f:A\rightarrow B$，若对任意$x,y\in A$，且$x\neq y$，有$f(x)\neq f(y)$，则称$f$为\underline{单射}。
 \end{definition}
 
-也就是说，不同的$x$所对应的函数值都不相等。
+也就是说，不同的$x$所对应的函数值都不相等。如$f(x)=2x$,$g(x)=\dfrac{1}{x}$.
 
 \begin{definition}{满射}
   设$f:A\rightarrow B$，若$f$的值域与$B$相等，则称$f$为从$A$到$B$的\underline{满射}。
 \end{definition}
 
-也就是说，$B$中的任意元素都能找到原像。
+也就是说，$B$中的任意元素都能找到原像。如$f(x)=x^3$.
 
 \begin{definition}{一一映射}
   设$f:A\rightarrow B$，如果$f$既是单射又是满射，则称$f$为\underline{一一映射}。
 \end{definition}
 
-也就是一一对应的关系。
+也就是一一对应的关系。如$f(x)=2x$.
+
+\begin{example}
+  设函数$f(x)=x^2+ax+b$（其中$a,b$为常数），则$f(x)=(x+\dfrac{a}{2})^2+b-\dfrac{a^2}{4}\geqslant b-\dfrac{a^2}{4}$恒成立，可见$f$不是满射。
+
+  在学了复合映射以后，你可以试着用数学符号描述$f(x)$不是单射的原因。
+\end{example}
+
+\begin{example}
+  定义映射$f:\mathbb{Z}\rightarrow\mathbb{N},f(n)=n-1$，则$f$是一一映射。
+\end{example}
+
+\subsection{习题}
+
+\begin{exercise}\label{HS2FZ_lkb1_P34_exp.4,BJSZ_Algebra1_P40}
+  下列对应关系是不是从$A$到$B$的映射？
+\end{exercise}
+
+\begin{enumerate}
+  \item $A=\mathbb{R},B=\mathbb{R}^{+},f:x\rightarrow\left|x\right|$；
+  \item $A=\mathbb{R},B=\left\{y\mid y\geqslant 0\right\},f:x\rightarrow y=x^2$；
+  \item $A=\{x\mid x\in\mathbb{R},x\geqslant0\},B=\mathbb{R}$，对应法则$f$：任意$X\in A$都对应于其平方根。
+\end{enumerate}
+
+\begin{exercise}
+  设集合$A={a,b},B={m,n}$，从$A$到$B$可以建立多少种不同的映射？其中有多少种是一一映射？
+\end{exercise}
+
+\begin{exercise}
+  在下列给定的集合$A$和$B$间建立一一映射。
+\end{exercise}
+
+\begin{enumerate}
+  \item $A={x\mid 0\leqslant x\leqslant 2},B={y\mid 0\leqslant x\leqslant 4}$；
+  \item $A=[a,b],B=[0,1]$；
+  \item $A=(0,1),B=(1,+\infty)$.
+\end{enumerate}
+
+\begin{exercise}
+  求下列函数的自然定义域：
+\end{exercise}
+
+\begin{spacing}{1.8}
+  \begin{enumerate}
+  \item $f(x)=\sqrt{x-1}\cdot\sqrt{x+1}$；
+  \item $f(x)=\dfrac{\sqrt[3]{4x+8}}{\sqrt{3x-2}}$；
+  \item $f(x)=\dfrac1{\sqrt[3]{3x+6}}+\dfrac1x$.
+  \end{enumerate}
+
+\begin{exercise}
+  求下列函数的值域：
+\end{exercise}
+
+\begin{enumerate}
+  \item $f(x)=x^2+4x-5$；
+  \item $f(x)=5-\sqrt{-x^{2}+2x+3}$
+  \item $f(x)=x+\sqrt{1-2x}$
+  \item $f(x)=\dfrac{5x^{2}+9x+4}{x^{2}-1}$
+  \item $f(x)=\mid x-1\mid+\mid x+4\mid $
+\end{enumerate}
+\end{spacing}
+
+\subsection{复合映射}
+
+\subsection{函数图像}
+
+\subsection{散列函数}
+
+\section{函数的基本性质}
+
+\subsection{函数的单调性}
+
+\subsection{函数的奇偶性}
+
+\subsection{函数的周期性}
 
 \end{document}

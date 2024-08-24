@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  19 AUG 2024 22:40
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  24 AUG 2024 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1536,23 +1536,29 @@ Chapter 2.
 ]
 File: image/map2.1.1.png Graphic file (type bmp)
 <image/map2.1.1.png>
- [22] [23] (./Algebra1.aux)
+ [22] [23] [24] [25] (./Algebra1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `Algebra1.out' has not changed.
-(rerunfilecheck)             Checksum: 68D02E1BC6DDDA225250C61F4B075A5D;1092.
+
+Package rerunfilecheck Warning: File `Algebra1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Algebra1.out':
+(rerunfilecheck)             Before: 68D02E1BC6DDDA225250C61F4B075A5D;1092
+(rerunfilecheck)             After:  9CE5837413491ACECD19D08C8771DCBE;1224.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46826 strings out of 476683
- 1035806 string characters out of 5807575
- 1945179 words of memory out of 5000000
- 66235 multiletter control sequences out of 15000+600000
+ 46829 strings out of 476683
+ 1035878 string characters out of 5807575
+ 1946179 words of memory out of 5000000
+ 66238 multiletter control sequences out of 15000+600000
  526092 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (25 pages).
+Output written on Algebra1.pdf (27 pages).

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  16 AUG 2024 21:02
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  24 AUG 2024 17:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1833,9 +1833,6 @@ Missing character: There is no 、 ("3001) in font ntx-Regular-tlf-ot1!
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 253.
 [2] [3] [4] (./ExerciseAnswer.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `ExerciseAnswer.out' has not changed.
 (rerunfilecheck)             Checksum: 4F6E45A8C08E1E04D00112E4FE741717;114.
 Package logreq Info: Writing requests to 'ExerciseAnswer.run.xml'.
@@ -1843,10 +1840,10 @@ Package logreq Info: Writing requests to 'ExerciseAnswer.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48288 strings out of 476683
- 1015474 string characters out of 5807575
- 1961872 words of memory out of 5000000
- 67666 multiletter control sequences out of 15000+600000
+ 48289 strings out of 476683
+ 1015514 string characters out of 5807575
+ 1962027 words of memory out of 5000000
+ 67667 multiletter control sequences out of 15000+600000
  529189 words of font info for 122 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,136p,683b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
