@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  24 AUG 2024 17:56
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  28 AUG 2024 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1291,11 +1291,7 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (./Algebra1.aux
-
-LaTeX Warning: Label `img:proposition' multiply defined.
-
-)
+ (./Algebra1.aux)
 \openout1 = `Algebra1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1536,29 +1532,52 @@ Chapter 2.
 ]
 File: image/map2.1.1.png Graphic file (type bmp)
 <image/map2.1.1.png>
- [22] [23] [24] [25] (./Algebra1.aux)
+ [22] [23] [24] [25]
+File: image/2.1.5function1.eps Graphic file (type eps)
+<image/2.1.5function1.eps>
+File: image/2.1.5function2.eps Graphic file (type eps)
+<image/2.1.5function2.eps>
+File: image/2.1.5function5.eps Graphic file (type eps)
+<image/2.1.5function5.eps>
+ [26]
+File: image/2.1.5function3.eps Graphic file (type eps)
+<image/2.1.5function3.eps>
+ [27]
+File: image/2.1.5function4.eps Graphic file (type eps)
+<image/2.1.5function4.eps>
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (0.62733pt too wide) in paragraph at lines 1750--1751
+\TU/FZShuSong-Z01(0)/m/n/10.95 模 块，|  我 个 人 最 常 使 用 的 是 图 形 计 算 器  |（几 何 图 形 也 可 以 用 这 个 定 位） 。|  官 网 是[][]\TU/TeXGyreTermesX(0)/m/n/10.95 https://www.geogebra.org/[][]\TU/FZShuSong-Z01(0)/m/n/10.95 ，|
+ []
 
-
-Package rerunfilecheck Warning: File `Algebra1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Algebra1.out':
-(rerunfilecheck)             Before: 68D02E1BC6DDDA225250C61F4B075A5D;1092
-(rerunfilecheck)             After:  9CE5837413491ACECD19D08C8771DCBE;1224.
+File: image/geogebra1.png Graphic file (type bmp)
+<image/geogebra1.png>
+[28]
+File: image/geogebra2.png Graphic file (type bmp)
+<image/geogebra2.png>
+File: image/geogebra3.png Graphic file (type bmp)
+<image/geogebra3.png>
+File: image/geogebra4.png Graphic file (type bmp)
+<image/geogebra4.png>
+ [29]
+File: image/mathematica1.png Graphic file (type bmp)
+<image/mathematica1.png>
+File: image/mathematica2.png Graphic file (type bmp)
+<image/mathematica2.png>
+ [30] [31] [32] (./Algebra1.aux)
+Package rerunfilecheck Info: File `Algebra1.out' has not changed.
+(rerunfilecheck)             Checksum: 9CE5837413491ACECD19D08C8771DCBE;1224.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46829 strings out of 476683
- 1035878 string characters out of 5807575
- 1946179 words of memory out of 5000000
- 66238 multiletter control sequences out of 15000+600000
+ 46980 strings out of 476683
+ 1041906 string characters out of 5807575
+ 1947120 words of memory out of 5000000
+ 66377 multiletter control sequences out of 15000+600000
  526092 words of font info for 137 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (27 pages).
+Output written on Algebra1.pdf (34 pages).

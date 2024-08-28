@@ -1354,10 +1354,10 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 
 开头先说明一下，\textbf{映射也称为函数}。
 
-我们先给出映射的定义以及两个注释，再给例子。
+我们先给出映射的定义以及几个注释，再给例子。
 
 \begin{definition}{映射/函数}
-  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应（可以多对一，也可以一对一，但不能一对多），则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$，即$$y=f(x),$$元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应（可以多对一，也可以一对一，但不能一对多），则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,y=f(x)\text{或}f:A\rightarrow B,x\mapsto f(x)$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$；元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
 
   若我们知道$f(x)$的表达式（如\ref{MapExample2}），则使得$f(x)$有意义的所有$x$组成的集合称为\underline{自然定义域}。
 \end{definition}
@@ -1370,10 +1370,14 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   值域也可以这样表示：$$\left\{f(x)\mid x\in A\right\}.$$
 \end{remark}
 
+\begin{remark}
+  集合中的元素不一定是一个数！！！
+\end{remark}
+
 下面我们给出一元函数的定义。
 
 \begin{definition}{一元函数}
-  我们称函数$f:\mathbb{R}\rightarrow\mathbb{R}$为\underline{一元函数}。
+  若集合$D\subseteq \mathbb{R}$，则我们称函数$f:D\rightarrow\mathbb{R}$为\underline{一元函数}。
 \end{definition}
 
 \textcolor{blue}{此后，若无特殊说明，本读本中的函数均指的是一元函数。}
@@ -1388,11 +1392,13 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \centering
   \includegraphics[width=0.2\textwidth]{image/map2.1.1.png}
   \caption{一个对应法则为“平方”的映射（图源：《高级中学课本（试用） 代数 第一册（甲种本）》）}
-  \label{img:proposition}
+  \label{img:map1}
 \end{figure}
 
 \begin{example}\label{MapExample2}
-  让每一个$x\in\mathbb{R}$对应$2x$，就可以给出一个从$\mathbb{R}$到$\mathbb{R}$的映射$$f:\mathbb{R}\rightarrow\mathbb{R}.$$此时我们就可以写成：$$f(x)=2x(x\in\mathbb{R}).$$这里的$(x\in\mathbb{R})$由于是自然定义域，通常可以省去不写，直接写$f(x)=2x$，\textcolor{blue}{读作}“$fx$等于$2x$。
+  让每一个$x\in\mathbb{R}$对应$2x$，就可以给出一个从$\mathbb{R}$到$\mathbb{R}$的映射$$f:\mathbb{R}\rightarrow\mathbb{R},f(x)=2x.$$我们将其写成这样的形式（下文同）：$$f(x)=2x(x\in\mathbb{R}).$$这里的$(x\in\mathbb{R})$由于是自然定义域，通常省去不写，直接写$f(x)=2x$，\textcolor{blue}{读作}“$fx$等于$2x$”。
+
+  举个代入$x$值的例子。当$x=2$时，$f(2)=2\times 2=4$.
 \end{example}
 
 \begin{spacing}{2.0}
@@ -1502,7 +1508,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   设$f:A\rightarrow B$，若对任意$x,y\in A$，且$x\neq y$，有$f(x)\neq f(y)$，则称$f$为\underline{单射}。
 \end{definition}
 
-也就是说，不同的$x$所对应的函数值都不相等。如$f(x)=2x$,$g(x)=\dfrac{1}{x}$.
+也就是说，不同的$x$所对应的函数值都不相等。如$f(x)=2x$，$g(x)=\dfrac{1}{x}$.
 
 \begin{definition}{满射}
   设$f:A\rightarrow B$，若$f$的值域与$B$相等，则称$f$为从$A$到$B$的\underline{满射}。
@@ -1562,6 +1568,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \item $f(x)=\dfrac{\sqrt[3]{4x+8}}{\sqrt{3x-2}}$；
   \item $f(x)=\dfrac1{\sqrt[3]{3x+6}}+\dfrac1x$.
   \end{enumerate}
+\end{spacing}
 
 \begin{exercise}
   求下列函数的值域：
@@ -1569,18 +1576,347 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 
 \begin{enumerate}
   \item $f(x)=x^2+4x-5$；
-  \item $f(x)=5-\sqrt{-x^{2}+2x+3}$
-  \item $f(x)=x+\sqrt{1-2x}$
-  \item $f(x)=\dfrac{5x^{2}+9x+4}{x^{2}-1}$
-  \item $f(x)=\mid x-1\mid+\mid x+4\mid $
+  \item $f(x)=5-\sqrt{-x^{2}+2x+3}$；
+  \item $f(x)=x+\sqrt{1-2x}$；
+  \item \begin{spacing}{1.8}$f(x)=\dfrac{5x^{2}+9x+4}{x^{2}-1}$；\end{spacing}
+  \item $f(x)=\mid x-1\mid+\mid x+4\mid $.
 \end{enumerate}
-\end{spacing}
 
-\subsection{复合映射}
+\begin{exercise}
+  已知函数$f(x)=3x^2+4x-8$，求$f(2)$，$f(a)$，$f(a-2)$，$f(a)-f(2)$的值。
+\end{exercise}
+
+\begin{exercise}\label{2017RJA.P74.17}
+  是否存在函数$f(x),g(x)$满足条件：
+\end{exercise}
+
+\begin{enumerate}
+  \item 定义域相同，值域相同，但是对应关系不同；
+  \item 值域相同，对应关系相同，但是定义域不同。
+\end{enumerate}
+
+\subsection{函数的运算}
+
+设$f(x),g(x)$是定义域分别为$A$和$B$的两个函数，则在$A\cap B$上，$$f(x)\pm g(x),f(x)g(x),\dfrac{f(x)}{g(x)}\text{（其中}g(x)\neq 0\text{）}$$也是$A\cap B$上的函数。
+
+四则运算没什么可讲的，我们要重点讨论的是复合函数。
+
+我们来看一个例子。令$f(x)=2x+1$，现在，我们令$g(t)=3t+2$，然后用$g(t)$去替换$f(x)$当中的$x$，得到一个新的函数$\phi(t)=f[g(t)]=2(3t+2)+1=6t+5$.你可以理解为这是将两个函数“套”在一起，但更为严谨的说法是，这是两个函数的复合。
+
+下面我们给出复合映射（函数）的定义。此处映射等价于函数。
+
+\begin{remark}
+  接下来我们约定如下记号：若函数$f(x)$的定义域为$A$，则我们记它的值域为$f(A)$.
+\end{remark}
+
+设$f:A\rightarrow B,g:C\rightarrow D$是两个映射，若$f(A)\subseteq C$，则任意$x\in A$经过$f,g$连续作用后得到对应的$g(f(x))$，即有对应关系$$x\mapsto g(f(x))$$，这也是一个映射，我们称之为$g$与$f$的\underline{复合}，记作$g\circ x$.
+
+写得更正式一点就是下面的定义：
+
+\begin{definition}{复合映射}
+  设$f:A\rightarrow B,g:C\rightarrow D$是两个映射，且$f(A)\subseteq C$，则$g$与$f$的\underline{复合}定义为$$g\circ f:A\rightarrow D,x\mapsto g[f(x)].$$
+\end{definition}
+
+\begin{example}
+  设$f(x)=x^2,g(x)=2x+1$，则$f[g(x)]=(2x+1)^2=4x^2+4x+1$.
+\end{example}
 
 \subsection{函数图像}
 
-\subsection{散列函数}
+\begin{definition}
+  设函数$f(x)$的定义域为$A$则$f(x)$的图像定义为平面直角坐标系内的点集$\left\{(x,f(x))\mid x\in A\right\}$.
+\end{definition}
+
+\begin{example}
+  函数$f(x)=x^2+x-1$的部分图像如下（图像由Mathematica绘制，下同）：
+\end{example}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function1.eps}
+  \label{img:2.1.5function1}
+\end{figure}
+
+\begin{example}
+  函数$f(x)=x^3-x^2+x-3$的部分图像如下：
+\end{example}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function2.eps}
+  \label{img:2.1.5function2}
+\end{figure}
+
+\begin{example}{下取整函数}
+  记$\lfloor x\rfloor $为小于或等于$x$的最大整数，则下取整函数可记作$f(x)=\lfloor x\rfloor$.图像如下：
+\end{example}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function5.eps}
+  \label{img:2.1.5function5}
+\end{figure}
+
+解题时若恰当运用函数图像，有事半功倍的效果。
+
+接下来我们来看函数图像的变换。以下设$p(x,y)$为\textcolor{blue}{变换后}函数图像上任意一点，$P'(x',y')$为\textcolor{blue}{原函数}图像上对应于点$P$的一点。
+
+\subsubsection{平移变换}
+
+将$y=f(x)$（这是原函数，这里的$x$和下面的$x$并不一样）的图像向左平移$h$个单位长度，则有
+$\begin{cases}
+  x=x'-h
+  \\y=y'
+\end{cases}$，也就是
+$\begin{cases}
+  x'=x+h
+  \\y'=y
+\end{cases}$，
+由于$y'=f(x')$，把$x',y'$代回去，可知变换后的函数图像为$y=f(x+h)$的图像。
+
+同理可得：
+
+\begin{enumerate}
+  \item 将$y=f(x)$的图像向右平移$h$个单位长度得到$y=f(x-h)$的图像；
+  \item 将$y=f(x)$的图像向下平移$h$个单位长度得到$y=f(x)-h$的图像；
+  \item 将$y=f(x)$的图像向上平移$h$个单位长度得到$y=f(x)+h$的图像。
+\end{enumerate}
+
+\begin{exercise}
+  证明上述规律。
+\end{exercise}
+
+\subsubsection{伸缩变换}
+
+\begin{enumerate}
+  \item 横向伸缩：将函数$y=f(x)$的图像上所有点的横坐标变为原来的$\omega(\omega\neq 0)$倍后得到函数$y=f(\dfrac{x}{\omega})$的图像。
+  \item 纵向伸缩：将函数$y=f(x)$的图像上所有点的纵坐标变为原来的$\omega$倍后得到函数$y=\omega f(x)$的图像。
+\end{enumerate}
+
+证明方法和前面类似。
+
+\subsubsection{翻折变换}
+
+\begin{enumerate}
+  \item 下翻上：将函数$y=f(x)$在$x$轴下方这一部分的图像沿着$x$轴翻折，即得$\left| f(x)\right|$的图像；
+  \item 右翻左：将函数$y=f(x)$在$y$轴右侧这一部分的图像沿着$y$轴翻折，即得$f(\left| x\right|)$的图像。
+\end{enumerate}
+
+\subsubsection{对称变换}
+
+\begin{enumerate}
+  \item 函数$y=f(x)$的图像与函数$y=f(-x)$的图像关于$y$轴对称；
+  \item 函数$y=f(x)$的图像与函数$y=-f(x)$的图像关于$x$轴对称；
+  \item 函数$y=f(x)$的图像与函数$y=-f(-x)$的图像关于原点对称。
+\end{enumerate}
+
+\begin{example}
+  作出函数$y=\left| x^2+2x-2\right|$的图像。
+\end{example}
+
+\begin{solution}
+  如图所示。
+\end{solution}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function3.eps}
+  \label{img:2.1.5function3}
+\end{figure}
+
+\begin{example}
+  作出函数$f(x)=\dfrac{3x-7}{x-2}$的图像。
+\end{example}
+
+\begin{spacing}{1.8}
+  
+\end{spacing}
+\begin{solution}
+  \begin{spacing}{1.8}
+    $f(x)=\dfrac{3x-7}{x-2}=3-\dfrac{1}{x-2}$，可见$f(x)$的图像是由$g(x)=-\dfrac{1}{x}$的图像向右平移2个单位长度，再向上平移$3$个单位长度得到。如图所示。
+  \end{spacing}
+\end{solution}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function4.eps}
+  \label{img:2.1.5function4}
+\end{figure}
+
+\subsection{使用工具软件绘制函数图像}
+
+\subsubsection{Geogebra}
+
+Geogebra是一款免费的数学工具软件，主要包含图形计算器、几何、3D计算器和CAS计算器四个模块，我个人最常使用的是图形计算器（几何图形也可以用这个定位）。官网是\href{https://www.geogebra.org/}{https://www.geogebra.org/}，在这里既可以下载Geogebra计算器的APP（\href{https://www.geogebra.org/download}{https://www.geogebra.org/download}），也可以点击“打开计算器”直接打开在线版使用。
+
+我们以Windows版的Geogebra为例，作函数$f(x)=x^3+x^2+1$的图像关于原点对称。
+
+下载完安装包后直接打开，等待Geogebra自动安装。安装完后启动Geogebra，你应该会看到类似于\ref{img:geogebra1}的界面：
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{image/geogebra1.png}
+  \caption{Geogebra启动界面}
+  \label{img:geogebra1}
+\end{figure}
+
+\begin{remark}
+  如果你通过上面给的下载链接进入后直接点击“下载”，默认下载的是Geogebra 6。
+\end{remark}
+
+\hspace*{\fill}
+
+点击左边的“代数区”，再点击左下角的键盘图标唤出键盘，效果如\ref{img:geogebra2}所示。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{image/geogebra2.png}
+  \caption{打开代数区}
+  \label{img:geogebra2}
+\end{figure}
+
+点击左上角有“输入”二字的输入框，然后按\ref{img:geogebra3}所示数字顺序操作。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/geogebra3.png}
+  \caption{操作顺序}
+  \label{img:geogebra3}
+\end{figure}
+
+结果应该如\ref{img:geogebra4}所示。你可以通过右侧红圈处的两个按钮放大或缩小图像。更多的功能你可以自行探索。需要注意的是，保存时若弹出一个空白窗口，直接关掉即可。这个登录界面是连接不到的。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{image/geogebra4.png}
+  \caption{绘制出的函数图像}
+  \label{img:geogebra4}
+\end{figure}
+
+\subsubsection{Mathematica}
+
+Mathematica是一款极为强大的\underline{专业}数学工具软件。基本上啥都能干。
+
+（官网：\href{https://www.wolfram.com/mathematica/}{https://www.wolfram.com/mathematica/}）
+
+当然，这是个付费软件，而且并不方便购买。官网有提供试用，但我对此不太了解。若你有条件激活Mathematica，你可以体验一下它的强大功能；若没有条件，下文权当放松一下。
+
+在此我们展示一下它的绘制函数图像功能。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{image/mathematica1.png}
+  \caption{Mathematica启动界面}
+  \label{img:mathematica1}
+\end{figure}
+
+点击“新文档”新建一个文件。输入“Plot$\left[\text{x}^{\land}3+\text{x}^{\land}2+1,\{\text{x},-5,5\}\right]$”，按下\textcolor{blue}{Shift键+Enter键}即可。如图\ref{img:mathematica2}所示。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{image/mathematica2.png}
+  \caption{Mathematica绘制函数图像}
+  \label{img:mathematica2}
+\end{figure}
+
+\begin{remark}
+  Plot是绘制函数图像的命令。格式为Plot[$f,\left\{x,x_{min},x_{max}\right\}$]，表示绘制函数$f$的图像，其中$x$的取值范围为$x_{min}$到$x_{max}$.
+\end{remark}
+
+使用Mathematica需要善用帮助文档（\href{https://reference.wolfram.com/language/}{https://reference.wolfram.com/language/}）。
+
+在学习数学的过程中，工具软件可以帮我们减少许多麻烦。当然，不可完全依赖工具软件，将其作为辅助是一个不错的选择。当然，AI也同样是好帮手，可惜目前AI在本书的知识领域内容易出错（2024.8.28）。
+
+\subsection{习题}
+
+\begin{exercise}\label{2017RJB.P94.8.changed}
+  已知函数$f(x+2)=3x-7$，求$f(1),f(x)$.
+\end{exercise}
+
+\begin{exercise}
+  设函数$f(x)=x^2-7,g(x)=4x+8$，求$f(g(x)),g(f(x))$.
+\end{exercise}
+
+\begin{exercise}
+  作出下列函数的大致图像：
+\end{exercise}
+
+\begin{spacing}{1.8}
+  \begin{enumerate}
+    \item $f(x)=\dfrac12 x^2-x+2$；
+    \item $f(x)=x^3-2x+7$；
+    \item $f(x)=\dfrac{1}{10}x^4-x^2-5$；
+    \item $f(x)=\dfrac{x-1}{2x+1}$；
+    \item $f(x)=\sqrt{x-1}$；
+    \item $f(x)=\left|x\right|^2+\left|x\right|+2$；
+    \item $f(x)=\dfrac{1-\left|x\right|}{\left|1-x\right|}$；
+    \item $f(x)=1+\sqrt{x^{2}+2x}$.
+  \end{enumerate}
+\end{spacing}
+
+\begin{exercise}\label{BJSZ.Algebra1.P58-59.changed}
+  下列各题中，函数$f_1(x)$的图像经过怎样的变换可得到$f_2(x)$的图像？
+\end{exercise}
+
+\begin{spacing}{1.7}
+  \begin{enumerate}
+    \item $f_{1}(x)=2(x+2)^{2}, f_{2}(x)=2(x-2)^{2}+1$；
+    \item $f_{1}(x)=\dfrac{1}{x}, f_{2}(x)=\dfrac{1}{2x+3}$；
+    \item $f_{1}\left(x\right)=\left(x-1\right)^{2}-3,\quad f_{2}\left(x\right)=\left|\left(x-1\right)^{2}-3\right|$；
+    \item $f_{1}(x)=(x-1)^{2}-3,f_{2}(x)=(|x|-1)^{2}-3$.
+  \end{enumerate}
+\end{spacing}
+
+\begin{exercise}
+  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$的一条对称轴:
+\end{exercise}
+
+\begin{enumerate}
+  \item $f(1-x)=f(1+x)$；
+  \item $f(x-1)=f(2-x)$；
+  \item $f(b+x)=f(c-x)$.
+\end{enumerate}
+
+\begin{exercise}
+  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$关于哪一点对称:
+\end{exercise}
+
+\begin{enumerate}
+  \item $f(2-x)=-f(2+x)$；
+  \item $f(2-x)=-f(1+x)$；
+  \item $f(a-x)+f(c+x)=0$；
+  \item $f(a-x)+f(c+x)=2b$.
+\end{enumerate}
+
+\begin{exercise}
+  已知函数$f(x)$，若存在$x\in\mathbb{R}$使得$f(x)=x$，则称$x$为$f(x)$的不动点。
+\end{exercise}
+
+\begin{enumerate}
+  \item 求证：$f(x)$的不动点也是$f(f(x))$的不动点；
+  \item 求证：若$f(f(x))$有唯一的不动点，则$f(x)$也有唯一的不动点。
+\end{enumerate}
+
+\begin{exercise}\label{ASJC_G1_P22.5}
+  求证：对任意的实数$p$，抛物线$y=2x^2-px+4p+1$恒过一定点。
+\end{exercise}
+
+\begin{exercise}
+  设$f_n(x)=\underbrace{f\{f[\cdots f(x)]\}}_{n\text{次}}$，若$f(x)=\dfrac{x}{\sqrt{1+x^2}}$，求$f_n(x)$.
+\end{exercise}
+
+\begin{exercise}
+  设二次函数$f(x)=ax^{2}+bx+c(a>0)$，方程$f(x)-x=0$的两根$x_1,x_2$满足$0<x_1<x_2<\dfrac1a$.
+\end{exercise}
+
+\begin{enumerate}
+  \item 当$x\in(0,x_1)$时，求证：$x<f(x)<x_1$；
+  \item 设函数$f(x)$的图像关于$x=x_0$对称，求证：$x_0<\dfrac{x_1}{2}$.
+\end{enumerate}
+
+\begin{remark}
+  这是1997年全国高考数学试题（理工农医类）的压轴题，有相当的难度。
+\end{remark}
 
 \section{函数的基本性质}
 
