@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  28 AUG 2024 20:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  29 AUG 2024 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1462,56 +1462,56 @@ LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
+(Font)              scaled to size 12.0pt on input line 78.
 [1
 
 
 ]
-Overfull \hbox (25.22147pt too wide) in paragraph at lines 110--111
+Overfull \hbox (25.22147pt too wide) in paragraph at lines 112--113
 []\TU/FZShuSong-Z01(0)/m/n/10.95 按 照 \TU/TeXGyreTermesX(0)/m/n/10.95 Thomas J. Jech \TU/FZShuSong-Z01(0)/m/n/10.95 的  |《\TU/TeXGyreTermesX(0)/m/n/10.95 Set Theory\TU/FZShuSong-Z01(0)/m/n/10.95 》|  及 知 乎  |“無 雙”|  的 文 章  |（链 接：| [][]\TU/TeXGyreTermesX(0)/m/n/10.95 https://zhuanlan.zhihu.com/p/713264884[][]\TU/FZShuSong-Z01(0)/m/n/10.95 ）|
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 142.
+(Font)              scaled to size 8.0pt on input line 144.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 142.
+(Font)              scaled to size 6.0pt on input line 144.
 
-Overfull \hbox (5.07518pt too wide) in paragraph at lines 142--143
+Overfull \hbox (5.07518pt too wide) in paragraph at lines 144--145
 []\TU/FZShuSong-Z01(0)/b/n/10.95 例 \TU/TeXGyreTermesX(0)/b/n/10.95 1.2 []\TU/FZShuSong-Z01(0)/m/n/10.95 唐 宋 八 大 家 的 姓 名 组 成 的 集 合 可 以 表 示 为 $\OMS/cmsy/m/n/10.95 f[]g$\TU/FZShuSong-Z01(0)/m/n/10.95 。| 
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 166.
+(Font)              scaled to size 10.0pt on input line 168.
 [2]
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 195.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 197.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 195.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 197.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 195.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 197.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 195.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 197.
 
 
-LaTeX Font Warning: Command \boldmath invalid in math mode on input line 195.
+LaTeX Font Warning: Command \boldmath invalid in math mode on input line 197.
 
 
-LaTeX Font Warning: Command \mathversion invalid in math mode on input line 195.
+LaTeX Font Warning: Command \mathversion invalid in math mode on input line 197.
 
 [3]
-LaTeX Font Info:    Trying to load font information for U+ding on input line 234.
+LaTeX Font Info:    Trying to load font information for U+ding on input line 236.
  (e:/texlive/2023/texmf-dist/tex/latex/bbding/Uding.fd
 File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 ) [4] [5]
 File: image/Venn1.png Graphic file (type bmp)
 <image/Venn1.png>
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 383.
+(Font)              scaled to size 8.0pt on input line 385.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
-(Font)              scaled to size 6.0pt on input line 383.
+(Font)              scaled to size 6.0pt on input line 385.
  [6]
 File: image/Venn3.png Graphic file (type bmp)
 <image/Venn3.png>
@@ -1527,6 +1527,8 @@ File: image/proposition.png Graphic file (type bmp)
 <image/proposition.png>
  [18] [19] [20]
 Chapter 2.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
+(Font)              scaled to size 9.0pt on input line 1362.
 [21
 
 ]
@@ -1539,32 +1541,67 @@ File: image/2.1.5function2.eps Graphic file (type eps)
 <image/2.1.5function2.eps>
 File: image/2.1.5function5.eps Graphic file (type eps)
 <image/2.1.5function5.eps>
- [26]
+File: image/2.1.5function6.png Graphic file (type bmp)
+<image/2.1.5function6.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27]
 File: image/2.1.5function3.eps Graphic file (type eps)
 <image/2.1.5function3.eps>
- [27]
 File: image/2.1.5function4.eps Graphic file (type eps)
 <image/2.1.5function4.eps>
 
-Overfull \hbox (0.62733pt too wide) in paragraph at lines 1750--1751
+Overfull \hbox (0.62733pt too wide) in paragraph at lines 1753--1754
 \TU/FZShuSong-Z01(0)/m/n/10.95 模 块，|  我 个 人 最 常 使 用 的 是 图 形 计 算 器  |（几 何 图 形 也 可 以 用 这 个 定 位） 。|  官 网 是[][]\TU/TeXGyreTermesX(0)/m/n/10.95 https://www.geogebra.org/[][]\TU/FZShuSong-Z01(0)/m/n/10.95 ，|
  []
 
+[28]
 File: image/geogebra1.png Graphic file (type bmp)
 <image/geogebra1.png>
-[28]
 File: image/geogebra2.png Graphic file (type bmp)
 <image/geogebra2.png>
 File: image/geogebra3.png Graphic file (type bmp)
 <image/geogebra3.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/geogebra4.png Graphic file (type bmp)
 <image/geogebra4.png>
- [29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[29]
 File: image/mathematica1.png Graphic file (type bmp)
 <image/mathematica1.png>
 File: image/mathematica2.png Graphic file (type bmp)
 <image/mathematica2.png>
- [30] [31] [32] (./Algebra1.aux)
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31] [32]
+File: image/2.2.2function.eps Graphic file (type eps)
+<image/2.2.2function.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33]
+File: image/2.2.4function1.eps Graphic file (type eps)
+<image/2.2.4function1.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: image/2.2.4function1.eps Graphic file (type eps)
+<image/2.2.4function1.eps>
+[34] [35] [36] [37] (./Algebra1.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `Algebra1.out' has not changed.
 (rerunfilecheck)             Checksum: 9CE5837413491ACECD19D08C8771DCBE;1224.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
@@ -1572,12 +1609,12 @@ Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46980 strings out of 476683
- 1041906 string characters out of 5807575
- 1947120 words of memory out of 5000000
- 66377 multiletter control sequences out of 15000+600000
- 526092 words of font info for 137 fonts, out of 8000000 for 9000
+ 47127 strings out of 476683
+ 1049123 string characters out of 5807575
+ 1947555 words of memory out of 5000000
+ 66514 multiletter control sequences out of 15000+600000
+ 528126 words of font info for 147 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (34 pages).
+Output written on Algebra1.pdf (39 pages).

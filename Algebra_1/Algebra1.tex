@@ -68,6 +68,8 @@ CTAN：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
 
 \href{https://github.com/Siliconet/Math-Bridge}{https://github.com/Siliconet/Math-Bridge}
 
+本书采用CC-BY-SA 4.0许可证，许可证文件位于仓库目录下。
+
 \section{集合的概念与表示}
 集合论是学习数学的基础。基础到什么地步呢？集合论在几乎所有其他数学分支领域中都是基础内容。一方面，它作为一种表示工具存在。集合可以用来表示各种东西，比如说奇数、偶数、质数、合数。另一方面，集合是逻辑推理的基础，这意味着要继续学习接下来的内容，先学集合是必不可少的。（没错下一章就是简易逻辑，虽然集合论远不止于此）
 
@@ -598,7 +600,7 @@ $$\{x\mid x\geq0\}$$
 
   （第二步逆用了分配律，最后两步用到了同一律。）
 
-  $A\cap(A\cup B)=(A\cup\varnothing)\cap(A\cup B)=A\cup(B\cap\varnothing)=A.$
+  $A\cap(A\cup B)=(A\cup\varnothing)\cap(A\cup B)=A\cup(B\cap\varnothing)=A.\hfill\square$
 
   （第二步逆用了分配律，最后一步用到了零律。）
 \end{proof}
@@ -1357,22 +1359,14 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 我们先给出映射的定义以及几个注释，再给例子。
 
 \begin{definition}{映射/函数}
-  设$A,B$是两个非空集合，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应（可以多对一，也可以一对一，但不能一对多），则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,y=f(x)\text{或}f:A\rightarrow B,x\mapsto f(x)$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$；元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}。
+  设$A,B$是两个非空集合\footnote{集合中的元素不一定是一个数！！！}，若存在一个对应法则$f$，使得对$A$中的每个元素$x$，在$B$中都有\textcolor{orange}{唯一确定}的元素$y$按法则$f$与之对应（可以多对一，也可以一对一，但不能一对多），则称$f$为从$A$到$B$的\underline{映射}或从$A$到$B$的\underline{函数}，记作$$f:A\rightarrow B,y=f(x)\text{或}f:A\rightarrow B,x\mapsto f(x)$$其中$y$称为元素$x$（在映射$f$下）的\underline{像}，或者称为$x$对应的\underline{函数值}，记作$f(x)$；元素$x$称为元素$y$（在映射$f$下）的\textcolor{orange}{一个}\underline{原像}；集合$A$称为映射$f$的\underline{定义域}，$A$中所有元素的像组成的集合称为映射$f$的\underline{值域}\footnote{值域也可以这样表示：$\left\{f(x)\mid x\in A\right\}.$}。
 
   若我们知道$f(x)$的表达式（如\ref{MapExample2}），则使得$f(x)$有意义的所有$x$组成的集合称为\underline{自然定义域}。
 \end{definition}
 
-\begin{remark}
-  考虑到一元函数（按初中理解方式，就是只有一个变量的函数，我们接下来就要讨论这个）和多元函数（有多个变量的函数，本读本可能不讲）的统一，我们采用了这种广义的定义方式。
-\end{remark}
+考虑到一元函数（按初中理解方式，就是只有一个变量的函数，我们接下来就要讨论这个）和多元函数（有多个变量的函数，本读本可能不讲）的统一，我们采用了这种广义的定义方式。
 
-\begin{remark}
-  值域也可以这样表示：$$\left\{f(x)\mid x\in A\right\}.$$
-\end{remark}
 
-\begin{remark}
-  集合中的元素不一定是一个数！！！
-\end{remark}
 
 下面我们给出一元函数的定义。
 
@@ -1472,7 +1466,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 
 \begin{example}
   Dirichlet（狄利克雷）函数定义为
-  $$f(x)=
+  $$D(x)=
   \begin{cases}
     1,x\in\mathbb{Q}
     \\0,x\in\complement_{\mathbb{R}}\mathbb{Q}
@@ -1606,7 +1600,7 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 下面我们给出复合映射（函数）的定义。此处映射等价于函数。
 
 \begin{remark}
-  接下来我们约定如下记号：若函数$f(x)$的定义域为$A$，则我们记它的值域为$f(A)$.
+  我们约定如下记号：若函数$f(x)$的定义域为$A$，则我们记它的值域为$f(A)$.
 \end{remark}
 
 设$f:A\rightarrow B,g:C\rightarrow D$是两个映射，若$f(A)\subseteq C$，则任意$x\in A$经过$f,g$连续作用后得到对应的$g(f(x))$，即有对应关系$$x\mapsto g(f(x))$$，这也是一个映射，我们称之为$g$与$f$的\underline{复合}，记作$g\circ x$.
@@ -1655,6 +1649,15 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   \centering
   \includegraphics[width=0.5\textwidth]{image/2.1.5function5.eps}
   \label{img:2.1.5function5}
+\end{figure}
+
+为了突出特殊的取值，我们可以采用如\ref{img:2.1.5function6}的画法：
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.5\textwidth]{image/2.1.5function6.png}
+  \caption{突出特殊取值的画法（本图片来自同济大学出版社《高等数学（第七版 上册）》）}
+  \label{img:2.1.5function6}
 \end{figure}
 
 解题时若恰当运用函数图像，有事半功倍的效果。
@@ -1747,7 +1750,7 @@ $\begin{cases}
 
 \subsubsection{Geogebra}
 
-Geogebra是一款免费的数学工具软件，主要包含图形计算器、几何、3D计算器和CAS计算器四个模块，我个人最常使用的是图形计算器（几何图形也可以用这个定位）。官网是\href{https://www.geogebra.org/}{https://www.geogebra.org/}，在这里既可以下载Geogebra计算器的APP（\href{https://www.geogebra.org/download}{https://www.geogebra.org/download}），也可以点击“打开计算器”直接打开在线版使用。
+Geogebra是一款免费的数学工具软件，主要包含图形计算器、几何、3D计算器和CAS计算器四个模块，我个人最常使用的是图形计算器（几何图形也可以用这个定位）。官网是\href{https://www.geogebra.org/}{https://www.geogebra.org/}，在这里既可以下载Geogebra计算器的APP（\href{https://www.geogebra.org/download}{https://www.geogebra.org/download}\footnote{如果进入后直接点击“下载”，默认下载的是Geogebra 6。}），也可以点击“打开计算器”直接打开在线版使用。
 
 我们以Windows版的Geogebra为例，作函数$f(x)=x^3+x^2+1$的图像关于原点对称。
 
@@ -1760,9 +1763,7 @@ Geogebra是一款免费的数学工具软件，主要包含图形计算器、几
   \label{img:geogebra1}
 \end{figure}
 
-\begin{remark}
-  如果你通过上面给的下载链接进入后直接点击“下载”，默认下载的是Geogebra 6。
-\end{remark}
+
 
 \hspace*{\fill}
 
@@ -1810,7 +1811,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
   \label{img:mathematica1}
 \end{figure}
 
-点击“新文档”新建一个文件。输入“Plot$\left[\text{x}^{\land}3+\text{x}^{\land}2+1,\{\text{x},-5,5\}\right]$”，按下\textcolor{blue}{Shift键+Enter键}即可。如图\ref{img:mathematica2}所示。
+点击“新文档”新建一个文件。输入“Plot$\left[\text{x}^{\land}3+\text{x}^{\land}2+1,\{\text{x},-5,5\}\right]$”\footnote{Plot是绘制函数图像的命令。格式为Plot[$f,\left\{x,x_{min},x_{max}\right\}$]，表示绘制函数$f$的图像，其中$x$的取值范围为$x_{min}$到$x_{max}$.}，按下\textcolor{blue}{Shift键+Enter键}即可。如图\ref{img:mathematica2}所示。
 
 \begin{figure}[h]
   \centering
@@ -1819,13 +1820,9 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
   \label{img:mathematica2}
 \end{figure}
 
-\begin{remark}
-  Plot是绘制函数图像的命令。格式为Plot[$f,\left\{x,x_{min},x_{max}\right\}$]，表示绘制函数$f$的图像，其中$x$的取值范围为$x_{min}$到$x_{max}$.
-\end{remark}
-
 使用Mathematica需要善用帮助文档（\href{https://reference.wolfram.com/language/}{https://reference.wolfram.com/language/}）。
 
-在学习数学的过程中，工具软件可以帮我们减少许多麻烦。当然，不可完全依赖工具软件，将其作为辅助是一个不错的选择。当然，AI也同样是好帮手，可惜目前AI在本书的知识领域内容易出错（2024.8.28）。
+在学习数学的过程中，工具软件可以帮我们减少许多麻烦。当然，不可完全依赖工具软件，将其作为辅助是一个不错的选择。AI也同样是好帮手，可惜目前AI在本书的知识领域内容易出错（2024.8.28）。
 
 \subsection{习题}
 
@@ -1842,14 +1839,16 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 \end{exercise}
 
 \begin{spacing}{1.8}
-  \begin{enumerate}
+  \begin{enumerate}\label{exer:FunctionGraph}
     \item $f(x)=\dfrac12 x^2-x+2$；
     \item $f(x)=x^3-2x+7$；
-    \item $f(x)=\dfrac{1}{10}x^4-x^2-5$；
     \item $f(x)=\dfrac{x-1}{2x+1}$；
+    \item $f(x)=x-\lfloor x\rfloor$（对于$x>0$来说，这个函数相当于取$x$的小数部分）；
     \item $f(x)=\sqrt{x-1}$；
     \item $f(x)=\left|x\right|^2+\left|x\right|+2$；
     \item $f(x)=\dfrac{1-\left|x\right|}{\left|1-x\right|}$；
+    \item $f(x)=\dfrac{1}{1+x^2}$（箕舌线）；
+    \item $f(x)=\frac{2x}{1+x^2}$（牛顿蛇形线）；
     \item $f(x)=1+\sqrt{x^{2}+2x}$.
   \end{enumerate}
 \end{spacing}
@@ -1868,7 +1867,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 \end{spacing}
 
 \begin{exercise}
-  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$的一条对称轴:
+  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$的图像的一条对称轴:
 \end{exercise}
 
 \begin{enumerate}
@@ -1878,7 +1877,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 \end{enumerate}
 
 \begin{exercise}
-  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$关于哪一点对称:
+  定义域为$\mathbb{R}$的函数$f(x)$满足以下条件，分别写出对应条件下$f(x)$的图像关于哪一点对称:
 \end{exercise}
 
 \begin{enumerate}
@@ -1920,10 +1919,278 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 
 \section{函数的基本性质}
 
+\subsection{函数的有界性}
+
+\begin{definition}
+  设函数$f(x)$的定义域为$D$\footnote{由于定义域的英文为domain，有时人们习惯用$D$表示定义域。}，数集$A\subseteq D$，若存在$K_1\in\mathbb{R}$，使得对任意的$x\in A$，$f(x)leqslant K_1$恒成立，则称$f(x)$在$A$上有\underline{上界}，称$K_1$是$f(x)$在$A$上的\textcolor{orange}{一个上界}。
+
+  若存在$K_2\in\mathbb{R}$，使得对任意的$x\in A$，$f(x)\geqslant K_2$恒成立，则称$f(x)$在$A$上有\underline{下界}，称$K_2$是$f(x)$在$A$上的\textcolor{orange}{一个下界}。
+
+  若存在$K\in\mathbb{R}$，使得对任意的$x\in A$，$\left|f(x)\right|\leqslant K$恒成立，则称$f(x)$在$A$上\underline{有界}，若不存在这样的$K$，则称$f(x)$在$A$上\underline{无界}。
+\end{definition}
+
+\begin{example}
+  函数$f(x)=\dfrac1x$在$(0,+\infty)$上没有上界，但有下界。
+\end{example}
+
+\begin{example}
+  函数$f(x)=x^2+x+1$在$(0,1)$上有界。
+\end{example}
+
 \subsection{函数的单调性}
+
+\begin{definition}
+  设函数$f(x)$的定义域为$D$，区间$A\subseteq D$，若对任意的$x_1,x_2\in A$，当$x_1<x_2$时，$f(x_1)(<)\leqslant f(x_2)$恒成立，则称$f(x)$在区间$A$上\underline{（严格）单调递增}，或称$f(x)$在区间$A$上是\underline{增函数}；
+
+  若对任意的$x_1,x_2\in A$，当$x_1<x_2$时，$f(x_1)(>)\geqslant f(x_2)$恒成立，则称$f(x)$在区间$A$上（严格）单调递减，或称$f(x)$在区间$A$上是\underline{减函数}。
+
+  在定义域上单调递增和单调递减的函数统称单调函数。
+\end{definition}
+
+从几何角度来看，单调递增就是函数图像呈持续上升状态，单调递减就是函数图像呈持续下降状态。
+
+需要说明的是，现行（2024.8.29）高中教材中的单调相当于我们这里的严格单调。
+
+\begin{example}
+  $f(x)=x^2$在$(0,+\infty)$上单调递增，在$(-\infty,0)$上单调递减，在定义域内不是单调的。
+\end{example}
+
+\begin{spacing}{1.8}
+  \begin{example}
+    讨论函数$f(x)=x+\dfrac{k}{x}$在区间$(0,+\infty)$上的单调性并证明。
+  \end{example}
+
+  \begin{solution}
+    函数$f(x)=x+\dfrac{k}{x}$在$(0,\sqrt{k})$上单调递减，在$[\sqrt{k},+\infty)$是单调递增。
+  \end{solution}
+
+  \begin{proof}
+    \textcolor{blue}{任取}\footnote{为了体现任意性，我们需要任取。}$x_1,x_2\in (0,+\infty)$，且$x_1<x_2$，则$$f(x_1)-f(x_2)=\dfrac{k}{x_2}=(x_1-x_2)-\dfrac{k(x_1-x_2)}{x_1 x_2}=(x_1-x_2)\cdot \dfrac{x_1x_2-k}{x_1x_2},$$
+
+    当$0<x_1<x_2<\sqrt{k}$时，因为$x_1-x_2<0,x_1x_2-k<0,x_1x_2>0$，所以$f(x_1)-f(x_2)>0$，即$f(x_1)>f(x_2)$，所以$f(x)$在$(0,\sqrt{k})$上单调递减；
+
+    当$\sqrt{k}<x_1<x_2$时，因为$x_1-x_2<0,x_1x_2-k>0,x_1x_2>0$，所以$f(x_1)-f(x_2)<0$，即$f(x_1)<f(x_2)$，所以$f(x)$在$(0,\sqrt{k})$上单调递增。$\hfill\square$。 
+  \end{proof}
+
+\end{spacing}
+
+\begin{remark}
+  函数$f(x)=x+\dfrac{1}{x}$的图像如\ref{img:2.2.2function}所示：
+\end{remark}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.4\textwidth]{image/2.2.2function.eps}
+  \caption{函数$f(x)=x+\dfrac{1}{x}$的图像}
+  \label{img:2.2.2function}
+\end{figure}
+
 
 \subsection{函数的奇偶性}
 
+\begin{definition}{奇函数和偶函数}
+  设函数$f(x)$的定义域$D$关于原点对称，即$x\in D\Leftrightarrow-x\in D$。若对任意$x\in D$,都有$f(-x)=f(x)$,则称函数$f(x)$是偶函数；若对任意$x\in D$, 都有$f(-x)=-f(x)$,则称函数$f(x)$是奇函数。
+\end{definition}
+
+它们的最重要的性质定理是：
+
+\begin{property}
+  偶函数的图像关于$y$轴对称，奇函数的图像关于原点对称。
+\end{property}
+
+证明留作习题。另外几个重要结论会放在习题中并标注出来。
+
+\begin{example}
+  求证：函数$f(x)=\dfrac{x^{4}+1}{x^{2}+1}$是偶函数。
+\end{example}
+
+\begin{proof}
+  $f(x)$的定义域为$\mathbb{R}$，它关于原点对称，且$f(-x)=\dfrac{(-x)^{4}+1}{(-x)^{2}+1}=\dfrac{x^{4}+1}{x^{2}+1}=f(x)$，所以$f(x)$是偶函数。$\hfill\square$
+\end{proof}
+
+\begin{example}
+  设$F(x)$是定义在$\mathbb{R}$上的奇函数，且当$x>0$时，$F(x)$的表达式为$f(x)$，求$F(x)$的完整表达式。
+\end{example}
+
+\begin{solution}
+  因为$F(x)$是奇函数，所以它的图像关于原点对称。\textcolor{blue}{任取}$x\in(-\infty,0)$，设点$P(x,y)$位于$F(x)$的图像上，则点$P'(-x,-y)$也必在$F(x)$图像上，即$-y=f(-x)$，也就是$y=-f(-x)$.而当$x=0$时，因为$F(0)=-F(0)$，所以$F(0)=0$.
+
+  综上，$F(x)=
+  \begin{cases}
+    f(x),x>0
+    \\0,x=0
+    \\-f(-x),x<0
+  \end{cases}$
+\end{solution}
+
+我们上面其实顺便证明了一个重要的性质：
+
+\begin{property}
+  设$f(x)$为奇函数，若$f(0)$有定义，则$f(0)=0$.
+\end{property}
+
 \subsection{函数的周期性}
+
+\ref{exer:FunctionGraph}中有这样一个函数：$f(x)=x-\lfloor x\rfloor$，这个函数的图像如\ref{2.2.4function1}所示：
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image/2.2.4function1.eps}
+  \caption{函数$f(x)=x-\lfloor x\rfloor$的图像}
+  \label{2.2.4function1}
+\end{figure}
+
+可以看到，这个函数的图像呈现出\textcolor{blue}{周期性}，图像每隔一个单位长度便会重复出现。也就是说，$f(x+1)=f(x)$.
+
+另一个典型的例子是三角函数，虽然我们还没学，但我们先拿出来举个例子。
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{image/2.2.4function1.eps}
+  \caption{函数$f(x)=\sin x$的图像}
+  \label{2.2.4function2}
+\end{figure}
+
+这个函数的图像同样呈现出周期性。现在我们给周期性一个严谨的定义。
+
+\begin{definition}
+  设函数$f(x)$的定义域为$D$，若存在一个非零常数$T$，使得对任意$x\in D$，$f(x+T)=f(x)$恒成立，则称$f(x)$为\underline{周期函数}，并称$T$为$f(x)$的周期。若$f(x)$的所有周期中存在一个最小的正数，就称其为$f(x)$的\underline{最小正周期}。
+\end{definition}
+
+可能有人会疑惑：难道还有不存在最小正周期的函数？
+
+我们再次搬出前面提到的Dirichlet函数： 
+$$D(x)=
+\begin{cases}
+  1,x\in\mathbb{Q}
+  \\0,x\in\complement_{\mathbb{R}}\mathbb{Q}
+\end{cases},$$
+
+可见，任意非零有理数都是它的周期。由于不存在最小的正有理数，所以它没有最小正周期。
+
+\begin{example}
+  求证：若函数$f(x)$的图像关于两条直线$x=a,x=b(a\neq b)$对称，则$f(x)$是周期函数。
+\end{example}
+
+\begin{proof}
+  设$P(x,y)$是$f(x)$图像上任意一点，则点$P$关于直线$x=a$对称的点$P'(2a-x,y)$也在$f(x)$的图像上，点$P'$关于直线$x=b$对称的点$P''(2b-2a+x,y)$也在$f(x)$的图像上。由于$x$是任意的，所以$f(x)$是以$2b-2a$为周期的周期函数。$\hfill\square$
+\end{proof}
+
+\subsection{习题}
+
+下面是一些重要的结论：
+
+\begin{exercise}
+  设函数$f(x)$的定义域为$D$，证明：$f(x)$在$A\subseteq D$上有界的充要条件是它在$A$上既有上界又有下界。
+\end{exercise}
+
+\begin{exercise}
+  已知函数$f(x),g(x)$在公共的区间$A$上都是增（减）函数，求证：$f(x)+g(x)$在$A$上也是增（减）函数。
+\end{exercise}
+
+\begin{exercise}
+  证明下列二者之一：
+\end{exercise}
+
+\begin{enumerate}
+  \item 若两个正值函数$f(x)$和$g(x)$在公共区间$A$内都是增（减）函数，则函数$f(x)\cdot g(x)$在区间$A$内也是增（减）函数；
+  \item 若两个负值函数$f(x)$和$g(x)$在公共区间$A$内都是增（减）函数，则函数$f(x)\cdot g(x)$在区间 $A$ 内是减（增）函数。
+\end{enumerate}
+
+\begin{exercise}
+  证明：偶函数的图像关于$y$轴对称，奇函数的图像关于原点对称。
+\end{exercise}
+
+\begin{exercise}
+  设$f(x),g(x)$分别为定义域是$D_1,D_2$的奇函数，证明：在 $D_1\cap D_2$上$,f(x)+g(x)$是奇函数$,f(x)\cdot g(x)$是偶函数。
+\end{exercise}
+
+\begin{remark}
+  全部情况：奇$\pm$奇=奇，奇$\times$奇=偶,偶士偶=偶，偶×偶=偶，奇×偶=奇。
+\end{remark}
+
+\begin{exercise}
+  证明：若$f(x)$是严格单调函数，则当$f(x)$是奇（偶）函数时，它在正负对称的区间上（如$(0,1)$和$(-1,0)$）的单调性是相同（反）的。
+\end{exercise}
+
+\begin{exercise}
+  对于复合函数$\phi(x)=f[g(x)]$，证明下列三者之一：
+\end{exercise}
+
+\begin{enumerate}
+  \item 若$g(x)$为偶函数，则$\phi(x)$为偶函数；
+  \item 若$f(x),g(x)$均为奇函数，则$\phi(x)$为奇函数；
+  \item 若$g(x)$为奇函数，$f(x)$为偶函数，则$\phi(x)$为偶函数。
+\end{enumerate}
+
+\begin{exercise}
+  证明：任一定义域关于原点对称的函数都可以写成一个奇函数和一个偶函数的和。
+\end{exercise}
+
+\hspace*{\fill}
+
+结论证明到此结束，下面是其他习题。
+
+\begin{spacing}{1.8}
+  \begin{exercise}
+    证明$f(x)=\dfrac x{x^2+1}$在$(-1,1)$上是增函数。
+  \end{exercise}
+  
+  \begin{exercise}
+    证明$f(x)=x^3$在$\mathbb{R}$上是增函数。
+  \end{exercise}
+  
+  \begin{exercise}
+    求下列函数的单调区间，并使用Geogebra验证（在这时Geogebra比Mathematica更直观）。
+  \end{exercise}
+  
+  \begin{enumerate}
+    \item $f(x)=\dfrac{1}{\sqrt{x^{2}+x+1}}$；
+    \item $f(x)=\dfrac{1}{x-2}$；
+    \item $f(x)=\dfrac1{\sqrt{x}}$；
+    \item $f(x)=x^{2}-2|x|-1$.
+  \end{enumerate}
+  
+  \begin{exercise}
+    证明：存在唯一的函数$f(x)$，它既是奇函数又是偶函数。
+  \end{exercise}
+  
+  \begin{exercise}
+    判断下列函数是否具有奇偶性：
+  \end{exercise}
+  
+  \begin{enumerate}
+    \item $f(x)=2x^2+|x|$；
+    \item $h(x)=x^3(x\in[-1,3])$；
+    \item $f(x)=x+\dfrac{x^3}7-\dfrac{x^7}{10}$；
+    \item $f(x)=(x+1)(x-1)$；
+    \item $f(x)=\dfrac{1}{x^{2}-1}$；
+    \item $f(x)=\begin{cases}x-1, x\geqslant0,\\-x-1, x<0\end{cases}$.
+  \end{enumerate}
+\end{spacing}
+
+\begin{exercise}\label{2017RJB_bx1_P111.B7}
+  已知函数$f(x)=ax^2-2ax-3(a>0)$，运用函数性质来比较$f(-2)$与$f(4),f(-3)$与$f(3)$的大小.
+\end{exercise}
+
+\begin{exercise}\label{2017RJB_bx1_P111.B8}
+  已知函数$f(x)=(x-1)^2+ax+2$是偶函数，求实数$a$的值。
+\end{exercise}
+
+\begin{exercise}\label{2017RJB_bx1_P111.C2}
+  若函数$f(x)$是定义在$\mathbb{R}$上的偶函数，且$f(x)$在$(-\infty,0]$上严格单调递减，若$f(2)=0$，求不等式$f(x)<0$的解集。
+\end{exercise}
+
+\begin{exercise}\label{ASJC_G1_P30.11}
+  设$x,y\in\mathbb{R}$，且$\begin{cases}(x-1)^3+2008(x-1)=-1,\\(y-1)^3+2008(y-1)=1.\end{cases}$，求$x+y$的值。
+\end{exercise}
+
+\begin{exercise}\label{HS2FZ_lkb1_P57.3}
+  设$f(x)$是定义在$\mathbb{R}$上的函数，且满足$f(10+x)=f(10-x),f(20+x)=-f(20-x)$,证明：$f(x)$是奇函数，且$f(x)$是周期函数。
+\end{exercise}
+
+\begin{exercise}\label{HS2FZ_lkb1_P55.2}
+  设函数$f(x)$的定义域为$\mathbb{R}$，实数$a>0$，且对任意$x\in\mathbb{R}$，有$f(x+a)=\dfrac{1}{2}+\sqrt{f(x)-[f(x)]^{2}}$，证明：$f(x)$是周期函数。
+\end{exercise}
 
 \end{document}
