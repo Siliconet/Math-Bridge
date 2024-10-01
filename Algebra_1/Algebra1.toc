@@ -54,3 +54,6 @@
 \contentsline {subsection}{\numberline {2.2.3}函数的奇偶性}{33}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}函数的周期性}{34}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}习题}{35}{subsection.2.2.5}%
+\contentsline {section}{\numberline {2.3}指数运算}{37}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}回顾}{37}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}分数指数幂}{38}{subsection.2.3.2}%

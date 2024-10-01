@@ -1,4 +1,4 @@
-\documentclass[lang=cn,math=cm,chinesefont=nofont,11pt,scheme=chinese,onecol]{elegantbook}
+\documentclass[lang=cn,math=cm,chinesefont=nofont,11pt,scheme=chinese,twocol]{elegantbook}
 \setCJKmainfont[BoldFont={FZHei-B01},ItalicFont={FZKai-Z03}]{FZShuSong-Z01}
 \setCJKsansfont{FZHei-B01}
 \setCJKfamilyfont{zhsong}{FZShuSong-Z01}
@@ -1800,7 +1800,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 
 （官网：\href{https://www.wolfram.com/mathematica/}{https://www.wolfram.com/mathematica/}）
 
-当然，这是个付费软件，而且并不方便购买。官网有提供试用，但我对此不太了解。若你有条件激活Mathematica，你可以体验一下它的强大功能；若没有条件，下文权当放松一下。
+当然，这是个付费软件，而且并不方便购买。官网有提供试用。若你有条件激活Mathematica，你可以体验一下它的强大功能；若没有条件，下文权当放松一下。
 
 在此我们展示一下它的绘制函数图像功能。
 
@@ -1901,7 +1901,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 \end{exercise}
 
 \begin{exercise}
-  设$f_n(x)=\underbrace{f\{f[\cdots f(x)]\}}_{n\text{次}}$，若$f(x)=\dfrac{x}{\sqrt{1+x^2}}$，求$f_n(x)$.
+  设$f_n(x)=\underbrace{f\{f[\cdots f(x)]\}}_{n\text{次}}$，若$f(x)=\dfrac{x}{\sqrt{1+x^2}}$，猜想$f_n(x)$.
 \end{exercise}
 
 \begin{exercise}
@@ -1969,7 +1969,7 @@ Mathematica是一款极为强大的\underline{专业}数学工具软件。基本
 
     当$0<x_1<x_2<\sqrt{k}$时，因为$x_1-x_2<0,x_1x_2-k<0,x_1x_2>0$，所以$f(x_1)-f(x_2)>0$，即$f(x_1)>f(x_2)$，所以$f(x)$在$(0,\sqrt{k})$上单调递减；
 
-    当$\sqrt{k}<x_1<x_2$时，因为$x_1-x_2<0,x_1x_2-k>0,x_1x_2>0$，所以$f(x_1)-f(x_2)<0$，即$f(x_1)<f(x_2)$，所以$f(x)$在$(0,\sqrt{k})$上单调递增。$\hfill\square$。 
+    当$\sqrt{k}<x_1<x_2$时，因为$x_1-x_2<0,x_1x_2-k>0,x_1x_2>0$，所以$f(x_1)-f(x_2)<0$，即$f(x_1)<f(x_2)$，所以$f(x)$在$(0,\sqrt{k})$上单调递增。$\hfill\square$
   \end{proof}
 
 \end{spacing}
@@ -2192,5 +2192,153 @@ $$D(x)=
 \begin{exercise}\label{HS2FZ_lkb1_P55.2}
   设函数$f(x)$的定义域为$\mathbb{R}$，实数$a>0$，且对任意$x\in\mathbb{R}$，有$f(x+a)=\dfrac{1}{2}+\sqrt{f(x)-[f(x)]^{2}}$，证明：$f(x)$是周期函数。
 \end{exercise}
+
+\section{指数运算}
+
+在本节，我们的目标是：推广我们以前所学的指数运算。
+
+\epigraph{在推广过程中要注意以下几个方面：
+
+1. 各种定义的条件．
+
+2. 探索各种定义产生的逻辑过程，
+
+3. 要熟练运用各种定义去计算．}{《中学数学实验教材 第三册 上》}
+
+\subsection{回顾}
+
+\begin{definition}{正整数指数幂}
+  当$n\in\mathbb{N}^*$时，我们定义$a^n=\underbrace{a\cdot a\cdots a}_{n\text{个}}$，并称$a$为底数，$n$为指数。
+\end{definition}
+
+此外，我们还学过以下的运算性质（此处设$m,n\in\mathbb{N}^*$）：
+
+\begin{property}\label{LawOfIndices1}
+  \begin{spacing}{1.8}
+    \begin{enumerate}
+    \item $a^m\cdot a^n=a^{m+n}$；
+    \item $a^m\div a^n=a^{m-n}(m>n,\text{且}a\neq 0)$；
+    \item $(a^m)^n=a^{mn}$；
+    \item $(ab)^n=a^nb^n$；
+    \item $\left(\dfrac ab\right)^n=\dfrac{a^n}{b^n}(b\neq 0)$.
+    \end{enumerate}  
+  \end{spacing}
+\end{property}
+
+这些性质都可以由上面的定义直接推出。下一小节开始，我们将要推广这个定义，将指数推广至实数。
+
+当$m=n$时，由于$a^m\div a^n=1$，假如去掉上面第二个公式中$m>n$的限制，这个式子理应变成$a^{m-n}=a^0=1$，于是，为了公式的统一，我们可以很自然地规定$a^0=1$，但由于$a^n$作分母，所以$a\neq 0$。事实上人们也确实是这么规定的。
+
+\begin{definition}{零指数幂}
+  规定$a^0=1(a\neq 0)$.
+\end{definition}
+
+当$m<n$时，$a^m\div a^n=\dfrac{a^m}{a^n}=\dfrac{a^m\div a^n}{a^n\div a^n}=\dfrac1{a^{n-m}}$，同样地，假如去掉$m>n$的限制，应该有$a^m\div a^n=a^{m-n}=a^{-(n-m)}$，为了公式统一，我们规定$a^{-(n-m)}=\frac1{a^{n-m}}(a\neq0)$.
+
+\begin{definition}{负指数幂}
+  规定$a^{-n}=\dfrac{1}{a^n}(a\neq 0,n\in\mathbb{N}^*)$.
+\end{definition}
+
+下面是几道练习。
+
+\begin{exercise}
+  对指数为零和负整数的情况证明\ref{ExponentOfPositiveInteger}.
+\end{exercise}
+
+\begin{spacing}{1.8}
+  \begin{exercise}\label{ZXSXZYJC_reformatted_3_P9.8b}
+  计算$\left[\left(\dfrac{5a^{-2}c^3}{3x^{-3}y^4}\right)^{-2}\right]^4$.
+  \end{exercise}
+
+  \begin{exercise}\label{ZXSXSYJC_reformatted_3_P9.9b}
+  计算$\dfrac{a^{-3}+b^{-3}}{a^{-1}+b^{-1}}+\dfrac{a^{-3}-b^{-3}}{a^{-1}-b^{-1}}$.
+  \end{exercise}
+\end{spacing}
+
+\subsection{分数指数幂}
+
+以$a^\frac{1}{2}$和$a^\frac34$为例，假设它们有意义，并且法则$(a^m)^n=a^{mn}$对它们也适用，那么应当有$(a^\frac{1}{2})^2=a$和$(a^\frac34)^4=a^3$，我们先设$a^\frac{1}{2}>0,a^\frac34>0$（一会再说明原因），那么$a^\frac{1}{2}=\sqrt{a},a^\frac34=\sqrt[4]{a^3}$.如果这么定义，看上去也蛮合理的，所以确实也这么定义了。
+
+\begin{definition}{分数指数幂}
+  若$a>0,m,n\in\mathbb{N}^*$，规定$a^\frac mn=\sqrt[n]{a^m},a^{-\frac mn}=\frac1{a^\frac mn}$.
+\end{definition}
+
+我们知道，许多看上去不同的分数经过约分或扩分后是相等的，比如说$\dfrac12,\dfrac24,\dfrac36,\cdots$由此看来，以相等的分数$x$算出的$a^x$也应该是相等的。即
+
+\begin{theorem}\label{ExponentTheorem1}
+  设$a\in\mathbb{R}^+$，$m,n,m_1,n_1\in\mathbb{Z}^+$，且$\dfrac mn=\dfrac{m_1}{n_1}$，则$a^{\frac mn}=a^\frac{m_1}{n_1}$.
+\end{theorem}
+
+\begin{proof}
+  由$\dfrac mn=\dfrac{m_1}{n_1}$得$mn_1=nm_1$，所以$a^{mn_1}=a^{m_1n}$.
+
+  又因为$a^{\frac mn}=\sqrt[n]{a^m}=\sqrt[nn_1]{a^{mn_1}}\quad ,a^{\frac{m_1}{n_1}}=\sqrt[n_1]{a^{m_1}}=\sqrt[nn_1]{a^{m_1n}}$，所以$\sqrt[nn_1]{a^{mn_1}}=\sqrt[nn_1]{a^{m_1n}}$，即$$a^{\frac mn}=a^{\frac{m_1}{n_1}}.$$ $\hfill\square$
+\end{proof}
+
+前面我们要求分数指数幂的底数大于$0$，这是因为：
+
+\begin{enumerate}
+  \item 如果底数为负数，就会与上面这个定理产生矛盾;
+  \item 如果$a$为负数，函数$f(x)=a^x$的图像是不连续的；
+  \item $0^{-\frac{m}{n}}$没有意义。
+\end{enumerate}
+
+也许你会认为，这样难道就不能定义底数为零或负数的分数指数幂了吗？
+
+2017版人教A版数学教材必修一上有一句话可以很好地解释这个问题。
+
+\begin{quotation}
+  数学中，引进一个新的概念或法则时，总希望它与已有的概念或法则相容。
+\end{quotation}
+
+这句话也可以用来解释我们前面为了统一公式而做的规定。
+
+当然硬要定义也是可以的，\footnote{《中学数学实验教材》上直接表明“分指数幂的定义不考虑底是负数的情形”，并且这套书并没有讲幂函数。而现行（2024.9.15）的高中数学教材默认指数为既约分数，这样就没有前面的定理了。}这样我们才可以把后面的幂函数的定义域扩展为$\mathbb{R}$。
+
+我们可以作如下定义：
+
+\begin{definition}{底数为负的分数指数幂}
+  设正分数$\dfrac{m}{n}$是既约分数（$m,n$互质），
+  
+  若$a\leqslant 0$，则当$\sqrt[n]{a^m}$有意义时，$a^{\frac{m}{n}}=\sqrt[n]{a^m}$.
+
+  若$a<0$且$\sqrt[n]{a^m}$有意义，则规定$a^{-\frac{m}{n}}=\dfrac{1}{a^\frac{m}{n}}$.
+\end{definition}
+
+既约分数在这里规避了类似于$(-2)^\frac{1}{3}$与$(-2)^\frac{2}{6}$不相等的问题。请注意\ref{ExponentTheorem1}在这里不适用，但是指数运算法则仍然适用。我们把加入本小节全部内容后的“改进版”指数运算法则写在下面。由于负指数幂的加入，现在只需要3条了：
+
+\begin{property}\label{LawOfIndices2}
+  设$a\in\mathbb{R},m,n\in\mathbb{Q}$，若$a^m$与$a^n$均有意义，则有：
+  \begin{enumerate}
+    \item $a^m\cdot a^n=a^{m+n}$；
+    \item $(a^m)^n=a^{mn}$；
+    \item $(ab)^n=a^nb^n$.
+    \end{enumerate}
+\end{property}
+
+\subsection{无理数指数幂}
+
+现在我们来解决定义指数幂的最后一部分：指数为无理数的情况。
+
+当然其实并不能称之为“解决”，因为不太严谨。如果要更严谨一些需要用到实数的完备性等知识，这超出了本书的内容范畴（你可以在“数学分析”课程中见到）。
+
+接下来我们只考虑底数大于$0$的情况。
+
+以$2^\sqrt{2}$为例，我们让两个有理数$p$和$q$分别从小于和大于$\sqrt{2}$的一侧无限逼近于$\sqrt{2}$，这样一来，从两侧逼近的结果应该趋于同一个确定的实数，这个实数就是$2^\sqrt{2}$的值。\footnote{运用类似的操作，我们就可以近似计算无理数指数幂。}
+
+一般情况也是如此。$a^n(a>0,n\text{为无理数})$是一个确定的实数。由此我们就可以将下一节要研究的指数函数$y=a^x(a>0)$的定义域扩展为$\mathbb{R}$.
+
+最后我们给出实数指数幂的指数运算法则：
+
+\begin{property}\label{LawOfIndices3}
+  设$a>0,m,n\in\mathbb{R}$有：
+  \begin{enumerate}
+    \item $a^m\cdot a^n=a^{m+n}$；
+    \item $(a^m)^n=a^{mn}$；
+    \item $(ab)^n=a^nb^n$.
+    \end{enumerate}
+\end{property}
+
+\subsection{指数幂相关计算}
 
 \end{document}

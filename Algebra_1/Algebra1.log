@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  29 AUG 2024 21:14
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  15 SEP 2024 21:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1598,23 +1598,36 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: image/2.2.4function1.eps Graphic file (type eps)
 <image/2.2.4function1.eps>
-[34] [35] [36] [37] (./Algebra1.aux)
+[34] [35] [36] [37] [38]
+
+LaTeX Warning: Reference `ExponentTheorem1' on page 39 undefined on input line 2308.
+
+[39] (./Algebra1.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `Algebra1.out' has not changed.
-(rerunfilecheck)             Checksum: 9CE5837413491ACECD19D08C8771DCBE;1224.
+
+Package rerunfilecheck Warning: File `Algebra1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Algebra1.out':
+(rerunfilecheck)             Before: DE4C05A856D8167D6028CD94DF6BBCA2;1450
+(rerunfilecheck)             After:  D6EFAE078B3FED1A7ED37DB13C6BA200;1333.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47127 strings out of 476683
- 1049123 string characters out of 5807575
- 1947555 words of memory out of 5000000
- 66514 multiletter control sequences out of 15000+600000
+ 47215 strings out of 476683
+ 1054232 string characters out of 5807575
+ 1948905 words of memory out of 5000000
+ 66602 multiletter control sequences out of 15000+600000
  528126 words of font info for 147 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (39 pages).
+Output written on Algebra1.pdf (41 pages).
