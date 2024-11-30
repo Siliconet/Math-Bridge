@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  2 OCT 2024 21:19
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  1 DEC 2024 00:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1291,7 +1291,11 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
- (./Algebra1.aux)
+ (./Algebra1.aux
+
+LaTeX Warning: Label `2.2.4function2' multiply defined.
+
+)
 \openout1 = `Algebra1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -1541,73 +1545,96 @@ File: image/2.1.5function2.eps Graphic file (type eps)
 <image/2.1.5function2.eps>
 File: image/2.1.5function5.eps Graphic file (type eps)
 <image/2.1.5function5.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/2.1.5function6.png Graphic file (type bmp)
 <image/2.1.5function6.png>
- [26] [27]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27]
 File: image/2.1.5function3.eps Graphic file (type eps)
 <image/2.1.5function3.eps>
 File: image/2.1.5function4.eps Graphic file (type eps)
 <image/2.1.5function4.eps>
 
-Overfull \hbox (3.13673pt too wide) in paragraph at lines 1737--1738
-\TU/FZShuSong-Z01(0)/m/n/10.95 模 块，|  我 个 人 最 常 使 用 的 是 图 形 计 算 器  |（几 何 图 形 也 可 以 用 这 个 定 位）| \TU/TeXGyreTermesX(0)/m/n/10.95 . \TU/FZShuSong-Z01(0)/m/n/10.95 官 网 是[][]\TU/TeXGyreTermesX(0)/m/n/10.95 https://www.geogebra.org/[][]\TU/FZShuSong-Z01(0)/m/n/10.95 ，|
- []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28]
 File: image/geogebra1.png Graphic file (type bmp)
 <image/geogebra1.png>
 File: image/geogebra2.png Graphic file (type bmp)
 <image/geogebra2.png>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/geogebra3.png Graphic file (type bmp)
 <image/geogebra3.png>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: image/geogebra4.png Graphic file (type bmp)
 <image/geogebra4.png>
-[29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/mathematica1.png Graphic file (type bmp)
 <image/mathematica1.png>
- [30]
+[29]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/mathematica2.png Graphic file (type bmp)
 <image/mathematica2.png>
- [31] [32] [33]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30] [31] [32] [33]
 File: image/2.2.2function.eps Graphic file (type eps)
 <image/2.2.2function.eps>
  [34]
 File: image/2.2.4function1.eps Graphic file (type eps)
 <image/2.2.4function1.eps>
-File: image/2.2.4function1.eps Graphic file (type eps)
-<image/2.2.4function1.eps>
- [35] [36] [37]
-
-LaTeX Warning: Reference `ExponentOfPositiveInteger' on page 38 undefined on input line 2227.
-
-[38] [39] [40] [41] [42] (./Algebra1.aux)
-
-LaTeX Warning: There were undefined references.
+File: image/2.2.4function2.eps Graphic file (type eps)
+<image/2.2.4function2.eps>
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
+[35] [36] [37] [38]
+Underfull \hbox (badness 1092) in paragraph at lines 2303--2303
+[][][] |\TU/FZShuSong-Z01(0)/m/n/9 《中 学 数 学 实 验 教 材》|  上 直 接 表 明  |“分 指 数 幂 的 定 义 不 考 虑 底 是 负 数 的 情 形”| \TU/TeXGyreTermesX(0)/m/n/9 , \TU/FZShuSong-Z01(0)/m/n/9 并 且 这 套 书 并 没 有 讲 幂 函 数\TU/TeXGyreTermesX(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 而 现 行
+ []
 
-Package rerunfilecheck Warning: File `Algebra1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+[39] [40] [41]
+File: image/2.4function1.eps Graphic file (type eps)
+<image/2.4function1.eps>
+File: image/2.4function2.eps Graphic file (type eps)
+<image/2.4function2.eps>
 
-Package rerunfilecheck Info: Checksums for `Algebra1.out':
-(rerunfilecheck)             Before: D6EFAE078B3FED1A7ED37DB13C6BA200;1333
-(rerunfilecheck)             After:  229C9117BD3655A1249DA888EFE9334E;1551.
+Overfull \hbox (1.69992pt too wide) in paragraph at lines 2457--2458
+[]\TU/FZShuSong-Z01(0)/m/n/10.95 我 们 的 学 习 过 程 是 先 学 指 数\TU/TeXGyreTermesX(0)/m/n/10.95 , \TU/FZShuSong-Z01(0)/m/n/10.95 后 学 对 数\TU/TeXGyreTermesX(0)/m/n/10.95 . \TU/FZShuSong-Z01(0)/m/n/10.95 历 史 上 则 是 先 有 对 数\TU/TeXGyreTermesX(0)/m/n/10.95 , \TU/FZShuSong-Z01(0)/m/n/10.95 后 有 指 数\TU/TeXGyreTermesX(0)/m/n/10.95 .Napier |\TU/FZShuSong-Z01(0)/m/n/10.95 （\TU/TeXGyreTermesX(0)/m/n/10.95 1550-1617\TU/FZShuSong-Z01(0)/m/n/10.95 ）|  在 \TU/TeXGyreTermesX(0)/m/n/10.95 1594
+ []
+
+[42] (./Algebra1.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `Algebra1.out' has not changed.
+(rerunfilecheck)             Checksum: 229C9117BD3655A1249DA888EFE9334E;1551.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47057 strings out of 476683
- 1042466 string characters out of 5807575
- 1946947 words of memory out of 5000000
- 66444 multiletter control sequences out of 15000+600000
+ 46982 strings out of 476683
+ 1036509 string characters out of 5807575
+ 1948474 words of memory out of 5000000
+ 66366 multiletter control sequences out of 15000+600000
  528126 words of font info for 147 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
