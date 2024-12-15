@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  1 DEC 2024 00:25
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2024.1.27)  15 DEC 2024 10:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1486,7 +1486,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--145
  []
 
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 166.
+(Font)              scaled to size 10.0pt on input line 154.
 [2]
 
 LaTeX Font Warning: Command \boldmath invalid in math mode on input line 197.
@@ -1513,39 +1513,43 @@ File: Uding.fd 1996/02/01 v1.0 BBding font definitions
 ) [4] [5]
 File: image/Venn1.png Graphic file (type bmp)
 <image/Venn1.png>
+ [6]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
 (Font)              scaled to size 8.0pt on input line 385.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/it' will be
 (Font)              scaled to size 6.0pt on input line 385.
- [6]
 File: image/Venn3.png Graphic file (type bmp)
 <image/Venn3.png>
 File: image/Venn2.png Graphic file (type bmp)
 <image/Venn2.png>
- [7] [8] [9] [10] [11] [12]
+ [7] [8] [9] [10] [11] [12] [13]
 Missing character: There is no ” ("201D) in font cmr10!
-[13]
+[14]
 Missing character: There is no 、 ("3001) in font cmr10!
 Missing character: There is no 、 ("3001) in font cmr10!
-[14] [15] [16] [17]
+[15] [16] [17] [18]
 File: image/proposition.png Graphic file (type bmp)
 <image/proposition.png>
- [18] [19] [20]
+ [19] [20] [21]
 Chapter 2.
 File: image/map2.1.1.png Graphic file (type bmp)
 <image/map2.1.1.png>
+[22
+
+]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermesX(0)/m/n' will be
 (Font)              scaled to size 9.0pt on input line 1353.
-[21
-
-] [22] [23] [24] [25]
+ [23] [24] [25] [26]
 File: image/2.1.5function1.eps Graphic file (type eps)
 <image/2.1.5function1.eps>
 File: image/2.1.5function2.eps Graphic file (type eps)
 <image/2.1.5function2.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/2.1.5function5.eps Graphic file (type eps)
 <image/2.1.5function5.eps>
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1554,89 +1558,83 @@ File: image/2.1.5function6.png Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27]
+[27] [28]
 File: image/2.1.5function3.eps Graphic file (type eps)
 <image/2.1.5function3.eps>
+ [29]
 File: image/2.1.5function4.eps Graphic file (type eps)
 <image/2.1.5function4.eps>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
 File: image/geogebra1.png Graphic file (type bmp)
 <image/geogebra1.png>
 File: image/geogebra2.png Graphic file (type bmp)
 <image/geogebra2.png>
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [30]
 File: image/geogebra3.png Graphic file (type bmp)
 <image/geogebra3.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: image/geogebra4.png Graphic file (type bmp)
 <image/geogebra4.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [31]
 File: image/mathematica1.png Graphic file (type bmp)
 <image/mathematica1.png>
-[29]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 File: image/mathematica2.png Graphic file (type bmp)
 <image/mathematica2.png>
+ [32] [33] [34]
+File: image/2.2.2function.eps Graphic file (type eps)
+<image/2.2.2function.eps>
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30] [31] [32] [33]
-File: image/2.2.2function.eps Graphic file (type eps)
-<image/2.2.2function.eps>
- [34]
+[35]
 File: image/2.2.4function1.eps Graphic file (type eps)
 <image/2.2.4function1.eps>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 File: image/2.2.4function2.eps Graphic file (type eps)
 <image/2.2.4function2.eps>
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[35] [36] [37] [38]
-Underfull \hbox (badness 1092) in paragraph at lines 2303--2303
+[36] [37] [38] [39] [40]
+Underfull \hbox (badness 1092) in paragraph at lines 2305--2305
 [][][] |\TU/FZShuSong-Z01(0)/m/n/9 《中 学 数 学 实 验 教 材》|  上 直 接 表 明  |“分 指 数 幂 的 定 义 不 考 虑 底 是 负 数 的 情 形”| \TU/TeXGyreTermesX(0)/m/n/9 , \TU/FZShuSong-Z01(0)/m/n/9 并 且 这 套 书 并 没 有 讲 幂 函 数\TU/TeXGyreTermesX(0)/m/n/9 . \TU/FZShuSong-Z01(0)/m/n/9 而 现 行
  []
 
-[39] [40] [41]
+[41] [42] [43]
 File: image/2.4function1.eps Graphic file (type eps)
 <image/2.4function1.eps>
 File: image/2.4function2.eps Graphic file (type eps)
 <image/2.4function2.eps>
-
-Overfull \hbox (1.69992pt too wide) in paragraph at lines 2457--2458
+ [44]
+Overfull \hbox (1.69992pt too wide) in paragraph at lines 2535--2536
 []\TU/FZShuSong-Z01(0)/m/n/10.95 我 们 的 学 习 过 程 是 先 学 指 数\TU/TeXGyreTermesX(0)/m/n/10.95 , \TU/FZShuSong-Z01(0)/m/n/10.95 后 学 对 数\TU/TeXGyreTermesX(0)/m/n/10.95 . \TU/FZShuSong-Z01(0)/m/n/10.95 历 史 上 则 是 先 有 对 数\TU/TeXGyreTermesX(0)/m/n/10.95 , \TU/FZShuSong-Z01(0)/m/n/10.95 后 有 指 数\TU/TeXGyreTermesX(0)/m/n/10.95 .Napier |\TU/FZShuSong-Z01(0)/m/n/10.95 （\TU/TeXGyreTermesX(0)/m/n/10.95 1550-1617\TU/FZShuSong-Z01(0)/m/n/10.95 ）|  在 \TU/TeXGyreTermesX(0)/m/n/10.95 1594
  []
 
-[42] (./Algebra1.aux)
+[45] (./Algebra1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `Algebra1.out' has not changed.
-(rerunfilecheck)             Checksum: 229C9117BD3655A1249DA888EFE9334E;1551.
+
+Package rerunfilecheck Warning: File `Algebra1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Algebra1.out':
+(rerunfilecheck)             Before: A145B753AEBD1E3070203AA8221054F0;1745
+(rerunfilecheck)             After:  3024DCB5899D20A7DF0E26E86E3B9B58;1652.
 Package logreq Info: Writing requests to 'Algebra1.run.xml'.
 \openout1 = `Algebra1.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46982 strings out of 476683
- 1036509 string characters out of 5807575
- 1948474 words of memory out of 5000000
- 66366 multiletter control sequences out of 15000+600000
+ 46989 strings out of 476683
+ 1036644 string characters out of 5807575
+ 1950785 words of memory out of 5000000
+ 66373 multiletter control sequences out of 15000+600000
  528126 words of font info for 147 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,109p,677b,1326s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on Algebra1.pdf (44 pages).
+Output written on Algebra1.pdf (47 pages).

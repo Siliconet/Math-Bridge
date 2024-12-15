@@ -12,7 +12,7 @@
 \newcommand*{\kaiti}{\CJKfamily{zhkai}} % 楷体
 \newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
 \newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
-\linespread{1.3}
+\linespread{1.4}
 
 \usepackage{graphicx}
 \usepackage{amssymb}
@@ -1558,13 +1558,15 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
   求下列函数的值域：
 \end{exercise}
 
+\begin{spacing}{1.8}
 \begin{enumerate}
   \item $f(x)=x^2+4x-5$；
   \item $f(x)=5-\sqrt{-x^{2}+2x+3}$；
   \item $f(x)=x+\sqrt{1-2x}$；
-  \item \begin{spacing}{1.8}$f(x)=\dfrac{5x^{2}+9x+4}{x^{2}-1}$；\end{spacing}
+  \item $f(x)=\dfrac{5x^{2}+9x+4}{x^{2}-1}$；
   \item $f(x)=\mid x-1\mid+\mid x+4\mid $.
 \end{enumerate}
+\end{spacing}
 
 \begin{exercise}
   已知函数$f(x)=3x^2+4x-8$,求$f(2)$,$f(a)$,$f(a-2)$,$f(a)-f(2)$的值.
@@ -2414,6 +2416,20 @@ $$D(x)=
   已知$a^\frac12+a^{-\frac12}=3$,则$a+a^{-1}=$\underline{\hbox to 10mm{}},$a^{2}+a^{-2}=$\underline{\hbox to 10mm{}}.
 \end{exercise}
 
+\begin{exercise}\label{2017RJB_bx2_P13.4-1A3}
+  已知$0<a<1$，化简$\sqrt{a^{\frac{4}{3}}-2a+a^{\frac{2}{3}}}$.
+\end{exercise}
+
+\section{幂函数}
+
+\subsection{幂函数的图像与性质}
+
+实际上我们在此之前已经对幂函数有所了解。我们在初中就学过正比例函数$f(x)=x$、反比例函数$f(x)=x^{-1}$，二次函数$f(x)=x^2$，这些都属于幂函数.
+
+\begin{definition}{幂函数}
+  形如$f(x)=a^x$（其中常数$a\in\mathbb{R}$）的函数称为\underline{幂函数}.
+\end{definition}
+
 \section{指数函数}
 
 \subsection{指数函数的图像与性质}
@@ -2421,10 +2437,10 @@ $$D(x)=
 我们先给出指数函数的定义.
 
 \begin{definition}
-  形如$f(x)=a^x$的函数称为\underline{指数函数},其中\textcolor{blue}{$a>0$且$a\neq 1$}.
+  形如$f(x)=a^x$的函数称为\underline{指数函数},其中\textcolor{blue}{常数$a>0$且$a\neq 1$}.
 \end{definition}
 
-请注意底数的取值范围.我们在上一节就已经讨论过这个问题了.
+请注意底数的取值范围.我们在上一节就已经讨论过这个问题了.而指数可以任意取，所以指数函数的定义域为$\mathbb{R}$.
 
 通过描点的方式我们就可以画出指数函数的图像.以下我们给出用Mathematica绘制的图像.
 
@@ -2446,23 +2462,77 @@ $$D(x)=
 
 当$0<a<1$时,指数函数的图像类似于上图.
 
-其实，这两个函数的图像关于$y$轴对称.那么我们很自然地提出一个问题：$f(x)=a^x(a>0\text{且}a\neq 1)$和$g(x)=(\dfrac{1}{a})^x$的图像是否也是对称的？
+可以看出，这两个函数的图像关于$y$轴对称.那么我们很自然地提出一个问题：$f(x)=a^x(a>0\text{且}a\neq 1)$和$g(x)=(\dfrac{1}{a})^x$的图像是否也是关于$y$轴对称的？
 
 确实是这样.我们先来证明这一事实.
 
-\begin{proposition}
-  $f(x)=a^x(a>0\text{且}a\neq 1)$和$g(x)=(\dfrac{1}{a})^x$的图像对称.
-\end{proposition}
+\begin{property}
+  $f(x)=a^x(a>0\text{且}a\neq 1)$和$g(x)=(\dfrac{1}{a})^x$的图像关于$y$轴对称.
+\end{property}
 
 \begin{proof}
-  
+  因为$f(-x)=a^{-x}=(\dfrac{1}{a})^x=g(x)$，所以$f(x)$的图像经过关于$y$轴的对称变换后即可得到$g(x)$的图像.也就是说，$f(x)$与$g(x)$的图像关于$y$轴对称.$\hfill\square$
 \end{proof}
+
+此外，由于$a^0=1(a\neq 0)$，所以$f(x)=a^x(a\neq 1)$的图像必过$(0,1)$点.
+
+下面来看单调性.由前面给出的函数图像，我们很自然地给出下面这一性质：
+
+\begin{property}
+  当$a>1$时，$f(x)=a^x$在$\mathbb{R}$上单调递增；当$0<a<1$时，$f(x)=a^x$在$\mathbb{R}$上单调递减.
+\end{property}
+
+证明留作习题.
+
+最后需要提到的一点是，指数函数的值域为$(0,+\infty)$.
+
+\begin{example}
+  比较下列各题中两个数的大小：
+\end{example}
+
+\begin{enumerate}
+  \item $0.7^{-0.2}$与$0.7^{0.1}$；
+  \item $3^a$与$3^{a+1}$；
+  \item $\dfrac{7}{10}^{-0.81}$与$\dfrac{10}{7}^{0.92}$；
+  \item $1.7^{0.3}$与$0.9^{3.1}$.
+\end{enumerate}
+
+\begin{solution}
+  \begin{enumerate}
+    \item 因为指数函数$f(x)=0.7^x$单调递减，所以$0.7^{-0.2}>0.7^{0.1}$.
+    \item 因为指数函数$f(x)=3^x$单调递增，所以$3^a<3^{a+1}$.
+    \item 因为$\dfrac{7}{10}^{-0.81}=\dfrac{10}{7}^{0.81}$，且指数函数$f(x)=\dfrac{10}{7}^x$单调递增，所以$\dfrac{7}{10}^{-0.81}<\dfrac{10}{7}^{0.92}$.
+    \item 由指数函数的单调性可得$1.7^{0.3}>1.7^0=1,0.9^{3.1}<0.9^0=1$，所以$1.7^{0.3}>0.9^{3.1}$.
+  \end{enumerate}
+\end{solution}
+
+\subsection{习题}
+
+\begin{exercise}
+  证明：当$a>1$时，$f(x)=a^x$在$\mathbb{R}$上单调递增；当$0<a<1$时，$f(x)=a^x$在$\mathbb{R}$上单调递减.
+\end{exercise}
+
+\begin{spacing}{1.8}
+\begin{exercise}\label{BJSZ_Algebra1_P116.12}
+  证明：
+\end{exercise}
+
+\begin{enumerate}
+  \item $f(x)=\dfrac{a^x-a^{-x}}{2}(a>0\text{且}a\neq 1)$是奇函数.
+  \item $g(x)=x\cdot\dfrac{a^x-1}{a^x+1}(a>0\text{且}a\neq 1)$是偶函数.
+\end{enumerate}
+\end{spacing}
+
+
+\begin{exercise}\label{2017RJB_b2_P14.4-1C2}
+  设$f(x)=a^x$,其中$a>0$且$a\neq1$,比较$$\frac{f(x_1)+f(x_2)}2\text{与}f(\frac{x_1+x_2}2)$$的大小，并证明.
+\end{exercise}
 
 \section{对数运算}
 
 \subsection{对数运算的概念}
 
-我们的学习过程是先学指数,后学对数.历史上则是先有对数,后有指数.Napier（1550-1617）在1594年左右搞出对数,1614年发表了著作《论述对数的奇迹》.他将对数应用于球面三角的计算.而后Briggs（1561-1631）基于自己改进的定义算出了一张对数表\footnote{后来的人们利用对数表大大简化了运算,不过现在我们有计算机,并不需要这个.}.后来,在指数发明后,Euler给出了下面的定义\footnote{以上内容参见《古今数学思想（第一册）》.},也就是我们目前所用的.
+我们的学习过程是先学指数,后学对数.历史上则是先有对数,后有指数.Napier（1550-1617）在1594年左右发明对数,1614年发表了著作《论述对数的奇迹》.他将对数应用于球面三角的计算.而后Briggs（1561-1631）基于自己改进的定义算出了一张对数表\footnote{后来的人们利用对数表大大简化了运算,不过现在我们有计算机,通常不太需要这个.}.后来,在指数发明后,Euler给出了下面的定义\footnote{以上内容参见《古今数学思想（第一册）》.},也就是我们目前所用的.
 
 \begin{definition}{对数运算}
   设$a>0,N>0$,且$a\neq 1$,若$a^b=N$,则称幂指数$b$为以$a$为底$N$的\underline{对数},记作$b=\log_aN$.其中$a$称为对数的\underline{底数},$N$称为对数的\underline{真数}.
