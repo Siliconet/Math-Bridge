@@ -71,7 +71,7 @@ CTAN：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
 本书采用CC-BY-SA 4.0许可证,许可证文件位于仓库目录下.
 
 \section{集合的概念与表示}
-集合论是学习数学的基础.基础到什么地步呢？集合论在几乎所有其他数学分支领域中都是基础内容.一方面,它作为一种表示工具存在.集合可以用来表示各种东西,比如说奇数、偶数、质数、合数.另一方面,集合是逻辑推理的基础,这意味着要继续学习接下来的内容,先学集合是必不可少的.（没错下一章就是简易逻辑,虽然集合论远不止于此）
+集合论是学习数学的基础.基础到什么地步呢？集合论在几乎所有其他数学分支领域中都是基础内容.一方面,它作为一种表示工具存在.集合可以用来表示各种东西,比如说奇数、偶数、质数、合数.以后我们在描述问题时，会经常性地使用集合语言.另一方面,集合是逻辑推理的基础,这意味着要继续学习接下来的内容,先学集合是必不可少的.（没错下一章就是简易逻辑,虽然集合论远不止于此）
 
 那为什么不从小学开始学呢？普通小学生一开始学不懂嘛.
 
@@ -86,6 +86,8 @@ CTAN：\href{https://ctan.org/pkg/elegantbook}{https://ctan.org/pkg/elegantbook}
 我们研究的很多东西都可以构成集合.构成集合的对象可以是各种事物,可以是物,也可以是人,可以是数,也可以是图形,甚至可以是集合（没错就是套娃）……构成集合的对象称为这个集合的\textbf{元素}.
 
 比方说,以2023年《财富》世界500强排行榜当中的前5名作为一个集合,那么这个集合的元素是：沃尔玛、沙特阿美公司、国家电网有限公司、亚马逊、中国石油天然气集团有限公司.
+
+\hspace*{\fill}
 
 现在,我们来谈谈集合的分类.按照集合中含有的元素的个数,我们把集合分成两类：\textbf{有限集}（含有有限个元素的集合）和\textbf{无限集}（含有无限个元素的集合）.
 
@@ -291,24 +293,33 @@ $$\{x\mid x\geq0\}$$
 \end{exercise}
 
 \section{集合的关系与运算}
+
 从本节开始,证明性的内容会逐渐增加,当然难度也上来了.
+
 \subsection{子集}
+
 先来看一个例子：$$A=\{1,2,3,4,5\}\;B=\{1,2,3,4,5,6,7\}$$
 显然,$A$中的任意一个元素都在$B$中.
 类似这样地,我们给出子集的定义：
+
 \begin{definition}[子集]
   如果集合$A$的任意一个元素都是集合$B$的元素,那么集合 A 称为集合$B$的子集,记作$A\subseteq B$或$A\subset B$或$B\supseteq A$.前两个读作“$A$包含于$B$”,后一个读作“$B$包含$A$”.
 
   如果$A$不是$B$的子集,记作$A\nsubseteq B$或$B\nsupseteq A$,读作“$A$不包含于$B$”或“$B$不包含$A$”.
 \end{definition}
-不同的人符号习惯可能不同,多见几种表示方法也不是不可以（前提是不弄乱）如同鲁迅的《孔乙己》当中：
+
+不同的人符号习惯可能不同,多见几种表示方法可以让你看懂不同人写的书籍或文章（前提是不弄乱）.鲁迅的《孔乙己》当中有这样一段话：
+
 \begin{quotation}
   “对呀对呀！……回字有四样写法,你知道么？”——《孔乙己》
 \end{quotation}
 
+这两个现象有什么共性呢？我个人认为，它们都是在历史中出现的由不同人创造的表示形式.但是，多种表示形式的存在确实容易给后人造成不便，所以在本书中，我们统一用前面的符号，后文遇到这种情况会再次说明.
+
 根据定义便可以得到：$\mathbb{N}\subseteq\mathbb{Z}\subseteq\mathbb{Q}\subseteq\mathbb{R}$.
 
   另外,集合有一个基本的性质：
+
 \begin{property}
   任何集合都是其本身的子集.
 \end{property}
@@ -318,12 +329,15 @@ $$\{x\mid x\geq0\}$$
 \begin{example}
   写出集合$\{a,b,c\}$的所有子集.
 \end{example}
+
 \begin{remark}
   建议在写子集时按元素个数从小到大写,并且不要忽略空集.
 \end{remark}
+
 \begin{solution}
   集合$\{a,b,c\}$的所有子集为$\varnothing ,\{a\},\{b\},\{c\},\{a,b\},\{a,c\}\{b,c\},\{a,b,c\}$.
 \end{solution}
+
 \begin{definition}[集合的相等]
   对于集合$A$、$B$,如果有$A\subseteq B$,且$B\subseteq A$,则称集合$A$和$B$\underline{相等},记作$A=B$.
 \end{definition}
@@ -334,17 +348,19 @@ $$\{x\mid x\geq0\}$$
   判断下列两个集合是否相等.
   $$A=\left\{n\mid n=4k\pm1,k\in\mathbf{Z}\right\};B=\left\{m\mid m=2k+1,k\in\mathbf{Z}\right\}$$
 \end{example}
+
 \begin{solution}
   我们根据定义来证明（以后的相当一部分命题证明都是如此）.
 
-一方面,集合$B$是奇数集（我们在1.1的例\ref{exp:1}中提到）,而集合$A$的所有元素都是奇数,所以$A\subseteq B$.
+  一方面,集合$B$是奇数集（我们在1.1的例\ref{exp:1}中提到）,而集合$A$的所有元素都是奇数,所以$A\subseteq B$.
 
-另一方面,奇数$m$除以4的余数只可能是1或3（如果余数是0或2,$m$就是偶数了）,如果余数为1,那么$m=4k+1(k\in\mathbb{Z})$,因此$m\in A$；如果余数为3,那么$m=4k+3=4(k+1)-1(k\in\mathbb{Z})$,$m\in A$同样成立.所以$B\subseteq A$.
+  另一方面,奇数$m$除以4的余数只可能是1或3（如果余数是0或2,$m$就是偶数了）,如果余数为1,那么$m=4k+1(k\in\mathbb{Z})$,因此$m\in A$；如果余数为3,那么$m=4k+3=4(k+1)-1(k\in\mathbb{Z})$,$m\in A$同样成立.所以$B\subseteq A$.
 
-综上,$A=B$.
+  综上,$A=B$.
 \end{solution}
 
 下面来看看真子集.
+
 \begin{definition}[真子集]
   对于集合$A$、$B$,如果 $A\subseteq B$,并且$B$中至少有一个元素不属于$A$,那么集合$A$叫做集合$B$的真子集,记作$A\subsetneqq B$或$B\supsetneqq A$,读作“$A$真包含于$B$或$B$真包含$A$”.
 \end{definition}
@@ -352,7 +368,9 @@ $$\{x\mid x\geq0\}$$
 \begin{example}
   写出集合$\{a,b,c\}$的所有真子集.
 \end{example}
-\begin{solution}集合$\{a,b,c\}$的所有真子集为$\varnothing ,\{a\},\{b\},\{c\},\{a,b\},\{a,c\}\{b,c\}$.
+
+\begin{solution}
+  集合$\{a,b,c\}$的所有真子集为$\varnothing ,\{a\},\{b\},\{c\},\{a,b\},\{a,c\}\{b,c\}$.
 \end{solution}
 
 \begin{remark}
@@ -360,14 +378,17 @@ $$\{x\mid x\geq0\}$$
 \end{remark}
 
 \subsection{Venn图}
-  \underline{Venn图}（或者说\underline{韦恩图}）是一种用图形直观表示集合关系的方法.图像当然比文字更为直观,所以在解决某些问题时可以借助Venn图理清集合的关系.
+
+\underline{Venn图}（或者说\underline{韦恩图}）是一种用图形直观表示集合关系的方法.图像当然比文字更为直观,所以在解决某些问题时可以借助Venn图理清集合的关系.
 
 \begin{example}
   用Venn图表示集合$A\subseteq B$.
 \end{example}
+
 \begin{solution}
   如图\ref{img:Venn1}所示.
 \end{solution}
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.1\textwidth]{image/Venn1.png}
@@ -376,21 +397,27 @@ $$\{x\mid x\geq0\}$$
 \end{figure}
 
 \subsection{全集与补集}
-  我们研究集合间的关系时,这些集合可能都是某一个给定的集合的子集,我们称这个给定的集合为\underline{全集}.我们一般记全集为$U$.比如说,解不等式时,我们默认全集为$\mathbb{R}$.
 
-  接下来是补集.
+我们研究集合间的关系时,这些集合可能都是某一个给定的集合的子集,我们称这个给定的集合为\underline{全集}.我们一般记全集为$U$.比如说,解不等式时,我们默认全集为$\mathbb{R}$.
+
+接下来是补集.
+
 \begin{definition}{补集}
   设全集为$U$,集合$A\subseteq U$,由$U$中所有不属于$A$的元素组成的集合称为$A$在$U$中的\underline{补集},记作${\complement}_{U}A$（若不会产生歧义,即只有一个全集的情况下,也可以记作$\overline{A}$或者$A^c$）.读作“$A$在$U$中的补集”.即
 
   $${\complement}_{U}A=\{x|x\in I\text{,且}x\notin A\}.$$
 \end{definition}
+
 \begin{remark}
-  此后如无特殊说明,我们默认$U$为全集.由于不同人的符号习惯不同,你可能会在一些地方见到用“$I$”表示全集的.
+  此后如无特殊说明,我们默认$U$为全集.由于不同人的符号习惯不同,你可能会在一些地方见到用“$I$”表示全集的.此外还要说明一点，我国的国标采用了第一种形式，因此本书多数情况下也采用这一表示形式.
 \end{remark}
+
   然后来看几个例子.
+
 \begin{example}
   $\complement_{U}A$用Venn图表示如图\ref{img:Venn3}所示,上色部分即为$\complement_{U}A$.
 \end{example}
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=0.2\textwidth]{image/Venn3.png}
@@ -399,11 +426,11 @@ $$\{x\mid x\geq0\}$$
 \end{figure}
 
 \begin{example}
-  设$U=\mathbb{R}$,则无理数集可以表示为$\overline{Q}$.
+  设$U=\mathbb{R}$,则无理数集可以表示为$\complement_{U}Q$.
 \end{example}
 
 \begin{example}
-  设$U=\mathbb{N}$,则$\overline{\mathbb{Z}^+}={0}$,这里的$\mathbb{Z}^+$表示正整数集.
+  设$U=\mathbb{N}$,则$\complement_{U}\mathbb{Z}^+={0}$,这里的$\mathbb{Z}^+$表示正整数集.
 \end{example}
 
 下面是一个有趣的小例子.
@@ -423,14 +450,18 @@ $$\{x\mid x\geq0\}$$
 \end{example}
 
 \subsection{交集与并集}
+
 下面来看看集合的运算.
+
 有时候,我们需要研究两个集合的公共部分.比如说,不等式中每个不等式解集的公共部分就是整个不等式组的解集.
+
 \begin{definition}[交集]
   设$A$,$B$为两个集合,由$A$和$B$中的公共元素所组成的集合称为$A$和$B$的
   \underline{交集},记作$A\cap B$,即$$A\cap B=\{x\in A\text{ 且 }x\in B\}.$$
 \end{definition}
-  交集可以理解为两个集合相交的部分.
-  用Venn图表示如图\ref{img:Venn2}.
+
+交集可以理解为两个集合相交的部分.
+用Venn图表示如图\ref{img:Venn2}.
   \begin{figure}[h]
     \centering
     \includegraphics[width=0.2\textwidth]{image/Venn2.png}
@@ -443,15 +474,18 @@ $$\{x\mid x\geq0\}$$
   设$A$,$B$为两个集合,由$A$和$B$中所有元素组成的集合称为$A$和$B$的\underline{并集},记作$A\cup B$,即
   $$A\cup B=\{x\in A\text{或}x\in B\}$$
 \end{definition}
-  并集可以理解为两个集合合并且去掉重复元素后的部分.
-  如图\ref{img:Venn2}所示,上色部分即为$A\cup B$. 
+
+并集可以理解为两个集合合并且去掉重复元素后的部分.
+如图\ref{img:Venn2}所示,上色部分即为$A\cup B$. 
 
 由这两个定义我们立刻可以得到这些常见的性质（更多的性质稍后介绍）：
 
 设$A$为集合,$U$为全集,则
+
 \begin{property}
   零律：$A\cap\varnothing =\varnothing,A\cup\varnothing=A$;
 \end{property}
+
 \begin{property}
   同一律：$A\cap U=A;A\cup U=U$（这里$U$为全集）.
 \end{property}
@@ -459,7 +493,6 @@ $$\{x\mid x\geq0\}$$
 \begin{exercise}\label{exer:10}
   用Venn图表示这两个定律.
 \end{exercise}
-
 
 这两个定律还是比较好理解的.所以我们直接快进到两个例子.
 
@@ -585,7 +618,7 @@ $$\{x\mid x\geq0\}$$
   综上,$A\cap(B\cup C)=(A\cap B)\cup(A\cap C).\hfill\square$
 \end{proof}
 \begin{remark}
-  请特别注意,我们需要“任取”,这样才比较严谨.
+  思考一下为什么需要“任取”.
 \end{remark}
 
 \hspace*{\fill}
@@ -616,11 +649,11 @@ $$\{x\mid x\geq0\}$$
 \end{exercise}
 
 \begin{exercise}\label{exer:20}
-  $\text{设}U=\{\text{小于7的非负整数}\}\text{,}A=\{6\text{的正约数}\}\text{,}B=\{\text{不大于6的素数}\}\text{,}\text{求}\overline{A},\overline{A}\cap B, A\cup\overline{B}.$
+  $\text{设}U=\{\text{小于7的非负整数}\}\text{,}A=\{6\text{的正约数}\}\text{,}B=\{\text{不大于6的素数}\}\text{,}\text{求}\complement_{U}A,\left(\complement_{U}A\right)\cap B, A\cup\left(\complement_{U}B\right).$
 \end{exercise}
 
 \begin{exercise}\label{exer:19}
-  $\text{设}U=\{x\mid x{\in}N,\text{且}x{\leqslant}10\},A=\{1,2,4,5,9\},B{=}\{4,6,7,8,10\},C=\{3,5,7\},\text{求:}\\A\cap B,A\cup B,\bar{A}\cap\bar{B},\bar{A}\cup\bar{B},(A\cap B)\cap C,(A\cup B)\cup C.$
+  $\text{设}U=\{x\mid x{\in}N,\text{且}x{\leqslant}10\},A=\{1,2,4,5,9\},B{=}\{4,6,7,8,10\},C=\{3,5,7\},\text{求:}\\A\cap B,A\cup B,\left(\complement_{U}A\right)\cap\left(\complement_{U}B\right),\left(\complement_{U}A\right)\cup\left(\complement_{U}B\right),(A\cap B)\cap C,(A\cup B)\cup C.$
 \end{exercise}
 
 \begin{exercise}\label{exer:14}
@@ -628,8 +661,8 @@ $$\{x\mid x\geq0\}$$
 \end{exercise}
 
 \begin{exercise}\label{exer:15}
-  (1)证明：$\overline{A\cap B}=\overline{A}\cup\overline{B}$;
-  (2)证明：$\overline{A\cup B}=\overline{A}\cap\overline{B}.$
+  (1)证明：$\complement_{U}\left(A\cap B\right)=\left(\complement_{U}A\right)\cup\left(\complement_{U}B\right)$;
+  (2)证明：$\complement_{U}\left(A\cup B\right)=\left(\complement_{U}A\right)\cap\left(\complement_{U}B\right)$.
 
   这是集合的De Morgan（德摩根）定律,这个定律可以推广到n个集合,这里不做推广,毕竟n个集合的并集定义还没给出.
 \end{exercise}
@@ -924,13 +957,13 @@ $$x=y\text{是}x^2=y^2\text{的}\textbf{充分不必要条件.}$$
 \end{example}
 
 \begin{proof}
-  先证充分性,
+  先证充分性：
 
   原方程可化为$\left(x+\dfrac{b}{2a}\right)^{2}=\dfrac{b^{2}-4ac}{4a^{2}}$,
 
   当$b^2-4ac=0$时,上式右边等于0,则原方程有两个相等的实数根$x_1=x_2=-\dfrac{b}{2a}$.
 
-  再证必要性,
+  再证必要性：
   
 \begin{spacing}{1.8}
   若关于$x$的实系数一元二次方程$ax^2+bx+c=0$有两个相等的实数根,则由一元二次方程根与系数的关系可得$x_{1}+x_{2}=2x_{1}=-\dfrac{b}{a},x_{1}x_{2}=x_{1}^{2}=\dfrac{c}{a},$
@@ -1054,22 +1087,6 @@ $$\exists x>3,4x-7>0.$$
 对于全称量词命题,要判断其为真,需要验证集合$M$中的所有元素都满足$p(x)$,要判断其为假,只需要举出一个反例即可；
 
 对于存在量词命题,要判断其为真,只需要举出一个满足$p(x)$的$x$即可,要判断其为假,需要验证集合$M$中的所有元素都不满足$p(x)$.
-
-作为全称量词和存在量词的应用,我们现在给出若干集合的并集和交集的表示方法（这些集合的个数可以有限,也可以无限）：
-
-\begin{definition}{集合族}
-  以集合为元素的集合称为\underline{集合族}或\underline{集合类}.
-\end{definition}
-
-\begin{definition}{若干个集合的并集}
-  设$\{E_\alpha\mid\alpha\in I\}$（其中$\alpha$称为\underline{指标},$I$是由全体指标构成的\underline{指标集},指标集可以是有限集,也可以是无限集）,则这些集合$E_\alpha$的并集定义为$$\bigcup_{\alpha\in I}E_\alpha=\{x\mid\exists\alpha\in I,x\in E_\alpha\}$$
-\end{definition}
-
-\begin{definition}{若干个集合的交集}
-  设$\{E_\alpha\mid\alpha\in I\}$（其中$I$为指标集）,则这些集合$E_\alpha$的交集定义为$$\bigcap_{\alpha\in I}E_\alpha=\{x\mid\forall\alpha\in I,x\in E_\alpha\}$$
-\end{definition}
-
-你在后续课程中可能会用到这两个概念（譬如De Morgan定律）.
 
 \subsection{逻辑联结词}
 
@@ -1307,6 +1324,44 @@ $p\land q$的否定形式为$\lnot p\lor \lnot q$,$p\lor q$的否定形式为$\l
 \subsection{补充材料}
 
 \subsubsection{de Morgan定律}
+
+我们称以集合为元素的集合为\underline{集合族}.例如$\{A_1,A_2,A_3,\cdots\}$（其中$A_1,A_2,A_3,\cdots$是集合）.我们将这个集合写为$\{A_\alpha\mid\alpha\in I\}$（其中$I$称为指标集，在这里，$I=\mathbb{N}^*$）.这里所谓的“指标”，其实相当于集合的编号.请注意，指标集可以是有限集,也可以是无限集.
+
+\begin{definition}{若干个集合的并集}
+  设$\{A_\alpha\mid\alpha\in I\}$（其中$I$为指标集）,则这些集合$A_\alpha$的并集定义为$$\bigcup_{\alpha\in I}A_\alpha=\{x\mid\exists\alpha\in I,x\in A_\alpha\}.$$
+\end{definition}
+
+\begin{definition}{若干个集合的交集}
+  设$\{A_\alpha\mid\alpha\in I\}$（其中$I$为指标集）,则这些集合$A_\alpha$的交集定义为$$\bigcap_{\alpha\in I}A_\alpha=\{x\mid\forall\alpha\in I,x\in A_\alpha\}.$$
+\end{definition}
+
+现在我们就可以给出de Morgan定律了.为显简洁，这里我们用简单一点的符号.
+
+\begin{theorem}{de Morgan定律}
+  设$A,B$是两个集合族,则$$\left(\bigcup_{\alpha\in I}A_\alpha\right)^c=\bigcap_{\alpha\in I}A_\alpha^c,$$
+  $$\left(\bigcap_{\alpha\in I}A_\alpha\right)^c=\bigcup_{\alpha\in I}A_\alpha^c.$$
+\end{theorem}
+
+这一定律是由英国数学家\textit{Augustus de Morgan}（奥古斯都·德·摩根,1806-1871）在19世纪提出的.我们暂时不证明它，先来看看它的应用.
+
+de Morgan定律的应用源于它对于交集与并集的转换，我们可以通过它来简化一些问题.例如，从前面的内容当中我们知道，集合运算与逻辑运算具有对应关系.那么，de Morgan定律也可以用于逻辑运算.由这一定律可得：
+
+$$\neg(P\lor Q)\equiv\neg P\land\neg Q\text{，}\neg(P\land Q)\equiv\neg P\lor\neg Q.$$
+这在数字电路设计和数据库查询等计算机领域有相当的用途.
+
+此外，你还会在概率论、n维空间等领域看到de Morgan定律的应用.
+
+OK，下面来证明de Morgan定律.
+
+\begin{proof}
+  任取$$x\in\left(\bigcup_{\alpha\in I}A_{\alpha}\right)^{C},$$则$x\notin\bigcup_{\alpha\in I}A_{\alpha}$，即$\forall\alpha\in I,x\notin A_{\alpha}$，即$\forall\alpha\in I,x\in A_{\alpha}^{c}，$\footnote{比如说，若$x\notin A_1$那么一定有$x\in A_1^c$.}，即$x\in\bigcap_{\alpha\in I}A_{\alpha}^{c}$，即$$\left(\bigcup_{\alpha\in I}A_{\alpha}\right)^{c}=\bigcap_{\alpha\in I}A_{\alpha}^{c}.$$
+
+  于是我们证明了第一个等式.第二个等式可以同理证明，但我们使用一下第一个等式：
+
+  $$\left(\bigcap_{\alpha\in I}E_\alpha\right)^c=\left[\bigcap_{\alpha\in I}(E_\alpha^c)^c\right]^c=\left[\left(\bigcup_{\alpha\in I}E_\alpha^c\right)^c\right]^c=\bigcup_{\alpha\in I}E_\alpha^c.$$
+\end{proof}
+
+好的，de Morgan定律的介绍就到这里.
 
 \subsubsection{Russell悖论}
 
